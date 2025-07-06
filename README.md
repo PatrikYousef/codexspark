@@ -19,7 +19,7 @@
 - 💡 Get inspirational goal ideas to stay motivated  
 - 🎵 Optional sound effects when the app launches  
 - 🖥️ Cross-platform support: Windows, macOS, and Linux  
-- 🎶 A custom theme song is coming tomorrow!  
+- 🎶 A custom theme song is here check it out named songforsaving_tracker.MP4
 - 🤝 Friendly to contributions and open source collaboration  
 
 ---
