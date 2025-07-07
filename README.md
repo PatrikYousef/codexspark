@@ -1,28 +1,67 @@
-# 💰 Personal Savings Tracker
+Simple TODO Calendar
 
-`savings_tracker.cpp` — A C++ Console App to Set Goals, Track Progress, and Stay Financially Motivated
+🌟 Simple TODO Calendar is a minimalist and colorful C++ console application that helps you manage daily tasks by month. It features an intuitive text-based interface with calendar views, task addition, and task display functionalities — all neatly formatted with Unicode box characters and ANSI colors for enhanced readability.
 
----
+Features
 
-## 🌟 What is this?
+📅 View calendar days for each month in a clean, week-aligned layout
+📌 Add tasks to any day of the selected month
+📋 View all tasks stored for each month, grouped by day
+🚪 Simple menu navigation with numbered options for adding/viewing tasks or exiting
+✨ Color-coded UI using ANSI escape codes for a better user experience
+🧹 Clear screen functionality for Windows and Unix-based terminals
+How to Use
 
-**Personal Savings Tracker** is a beginner-friendly C++ console application that helps you manage your savings goals with ease. Whether you're saving for a vacation, a new gadget, or a future investment, this app keeps everything organized — and fun!
+Build the program
+Compile the source code with your favorite C++ compiler (supporting C++11 or later):
+g++ -o todo_calendar todo_calendar.cpp
+Run the program
+./todo_calendar
+Navigate the menu:
+Select a number from the menu to add or view tasks by month.
+When adding a task, enter the day of the month and then type your task description.
+When viewing tasks, all saved tasks for that month are displayed by day.
+Exit
+Choose 0 to exit the application.
+Dependencies
 
----
+Standard C++ libraries (iostream, vector, string, iomanip, limits)
+Terminal with ANSI color support recommended for the best visual experience (most Unix terminals, Windows Terminal, etc.)
+Screenshots
 
-## 🧠 Features
+╔════════════════════════════════════════════════════════════╗
+                      🌟 SIMPLE TODO CALENDAR 🌟              
+╚════════════════════════════════════════════════════════════╝
 
-- ➕ Add personalized savings goals  
-- 📊 Automatically calculate and display monthly savings needed  
-- 🔍 Track progress toward each individual goal  
-- 🧾 Enter your savings and view a complete summary  
-- 💡 Get inspirational goal ideas to stay motivated  
-- 🎵 Optional sound effects when the app launches  
-- 🖥️ Cross-platform support: Windows, macOS, and Linux  
-- 🎶 A custom theme song is here check it out named songforsaving_tracker.MP4
-- 🤝 Friendly to contributions and open source collaboration  
+📌 =========== ADD TASK ===========
+    1. January             2. February            3. March             4. April
+    5. May                 6. June                7. July              8. August
+    9. September          10. October            11. November         12. December
 
----
+👁️  ========== VIEW TASKS ===========
+    13. January           14. February           15. March            16. April
+    17. May               18. June               19. July             20. August
+    21. September         22. October            23. November         24. December
+
+🚪 ============= EXIT ===============
+    0. Exit
+Code Highlights
+
+Cross-platform screen clearing: Supports both Windows and Unix-like terminals.
+Input validation: Ensures day input is valid for each month.
+Clean, formatted output: Uses Unicode box-drawing characters and ANSI colors.
+Task storage: Uses a vector of vectors of strings to store multiple tasks per day.
+Future Improvements
+
+Support for leap years (adjust February days dynamically)
+Save tasks to a file and load on startup
+Edit and delete tasks functionality
+Enhanced navigation (jump between months, search tasks, etc.)
+GUI or web-based version
+License
+
+This project is open-source and free to use. Feel free to modify and distribute!
+
 
 ## 🙌 Support & Contributions
 
