@@ -67,7 +67,8 @@ If you found this project useful, fun, or inspiring — or if you're curious abo
 > Let's build fun and helpful tools together! 😊
 
 ---
-<img width="1470" alt="Skärmavbild 2025-07-08 kl  21 04 18" src="https://github.com/user-attachments/assets/ca017d32-450e-4b83-9d5b-94ad97da8e3b" />
+
+<img width="1470" alt="Skärmavbild 2025-07-08 kl  21 07 12" src="https://github.com/user-attachments/assets/5914397e-b87e-464d-be36-9635d1f10fa8" />
 
 
 🙏 Thank You!
