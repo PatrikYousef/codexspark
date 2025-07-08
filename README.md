@@ -4,12 +4,19 @@ A versatile C++ console application featuring daily Bible verses, bank account m
 Features
 
 📖 Daily Bible Verses: Receive a fresh inspirational scripture each time you run the app.
+
 🏦 Bank Management: Add accounts, list all accounts, and deposit money with ease.
+
 📊 Math Utilities: Add, delete, display numbers, calculate sum and average.
+
 🔐 Name Encryption: Encrypt your name using a simple custom cipher.
+
 🕒 Real-Time Clock: Displays the current time on the main menu.
+
 🎨 Colorful UI: Uses ANSI colors to enhance terminal readability.
+
 🧹 Cross-platform Screen Clearing: Supports Windows and Unix systems.
+
 Getting Started
 
 Prerequisites
