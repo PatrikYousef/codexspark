@@ -1,66 +1,52 @@
-TODOLIST Calendar todolist_calender.cpp
+ConsoleUtilityApp.cpp
 
-🌟 Simple TODO Calendar is a minimalist and colorful C++ console application that helps you manage daily tasks by month. It features an intuitive text-based interface with calendar views, task addition, and task display functionalities — all neatly formatted with Unicode box characters and ANSI colors for enhanced readability.
-
+A versatile C++ console application featuring daily Bible verses, bank account management, math utilities, and name encryption — all wrapped in a clean, colorful interface.
 Features
 
-📅 View calendar days for each month in a clean, week-aligned layout
-📌 Add tasks to any day of the selected month
-📋 View all tasks stored for each month, grouped by day
-🚪 Simple menu navigation with numbered options for adding/viewing tasks or exiting
-✨ Color-coded UI using ANSI escape codes for a better user experience
-🧹 Clear screen functionality for Windows and Unix-based terminals
-How to Use
+📖 Daily Bible Verses: Receive a fresh inspirational scripture each time you run the app.
+🏦 Bank Management: Add accounts, list all accounts, and deposit money with ease.
+📊 Math Utilities: Add, delete, display numbers, calculate sum and average.
+🔐 Name Encryption: Encrypt your name using a simple custom cipher.
+🕒 Real-Time Clock: Displays the current time on the main menu.
+🎨 Colorful UI: Uses ANSI colors to enhance terminal readability.
+🧹 Cross-platform Screen Clearing: Supports Windows and Unix systems.
+Getting Started
 
-Build the program
-Compile the source code with your favorite C++ compiler (supporting C++11 or later):
-g++ -o todo_calendar todo_calendar.cpp
-Run the program
-./todo_calendar
-Navigate the menu:
-Select a number from the menu to add or view tasks by month.
-When adding a task, enter the day of the month and then type your task description.
-When viewing tasks, all saved tasks for that month are displayed by day.
-Exit
-Choose 0 to exit the application.
-Dependencies
+Prerequisites
+C++11 or higher compiler (g++, clang++, MSVC)
+Terminal supporting ANSI colors (recommended: Windows Terminal, PowerShell, Linux/macOS Terminal)
+Build Instructions
+Compile the application using:
 
-Standard C++ libraries (iostream, vector, string, iomanip, limits)
-Terminal with ANSI color support recommended for the best visual experience (most Unix terminals, Windows Terminal, etc.)
-Screenshots
+g++ -std=c++11 -o ConsoleUtilityApp ConsoleUtilityApp.cpp
+Run the executable:
 
-╔════════════════════════════════════════════════════════════╗
-                      🌟 SIMPLE TODO CALENDAR 🌟              
-╚════════════════════════════════════════════════════════════╝
+./ConsoleUtilityApp
+Usage
 
-📌 =========== ADD TASK ===========
-    1. January             2. February            3. March             4. April
-    5. May                 6. June                7. July              8. August
-    9. September          10. October            11. November         12. December
+Launch the program to view current time and a random Bible verse.
+Navigate the main menu using options 1-5.
+Perform banking operations, math calculations, or encrypt your name.
+Refresh Bible verses manually anytime.
+Input is validated for smooth experience.
+Follow on-screen prompts and press Enter to proceed when requested.
+File Overview
 
-👁️  ========== VIEW TASKS ===========
-    13. January           14. February           15. March            16. April
-    17. May               18. June               19. July             20. August
-    21. September         22. October            23. November         24. December
+ConsoleUtilityApp.cpp — The full source code with modular functions for each feature.
+Implements color-coded menus and messages.
+Handles user input safely and clearly.
+Features clean screen refreshing for smooth UI flow.
+Contributing
 
-🚪 ============= EXIT ===============
-    0. Exit
-Code Highlights
+Contributions and suggestions are welcome! Feel free to open issues or pull requests to improve the app.
 
-Cross-platform screen clearing: Supports both Windows and Unix-like terminals.
-Input validation: Ensures day input is valid for each month.
-Clean, formatted output: Uses Unicode box-drawing characters and ANSI colors.
-Task storage: Uses a vector of vectors of strings to store multiple tasks per day.
-Future Improvements
-
-Support for leap years (adjust February days dynamically)
-Save tasks to a file and load on startup
-Edit and delete tasks functionality
-Enhanced navigation (jump between months, search tasks, etc.)
-GUI or web-based version
 License
 
-This project is open-source and free to use. Feel free to modify and distribute!
+MIT License — free to use, modify, and share.
+
+Created with care by [Your Name]
+
+“Your word is a lamp to my feet and a light to my path.” — Psalm 119:105
 
 
 ## 🙌 Support & Contributions
