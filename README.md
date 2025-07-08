@@ -67,6 +67,7 @@ If you found this project useful, fun, or inspiring — or if you're curious abo
 > Let's build fun and helpful tools together! 😊
 
 ---
+<img width="1470" alt="Skärmavbild 2025-07-08 kl  21 04 18" src="https://github.com/user-attachments/assets/ca017d32-450e-4b83-9d5b-94ad97da8e3b" />
 
 
 🙏 Thank You!
@@ -78,7 +79,6 @@ Here’s a snapshot of the traffic my projects have received recently. This show
 	•	This kind of engagement is a strong indicator that my projects provide genuine value and meet real needs.
 
 I’m proud of this progress and motivated to keep building tools that help developers
-![image](https://github.com/user-attachments/assets/99c87235-007f-4660-8c57-8d1a08ab6e6d)
 
 Over the past 14 days, my 12 GitHub projects have received:
 	•	1691 views
