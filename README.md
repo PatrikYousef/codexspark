@@ -87,7 +87,7 @@ Here’s a snapshot of the traffic my projects have received recently. This show
 
 I’m proud of this progress and motivated to keep building tools that help developers
 
-Over the past 14 days, my 12 GitHub projects have received:
+Over the past 14 days, my 13 GitHub projects have received:
 	•	1945 views
 	•	124 clones
 	•	66 unique cloners
