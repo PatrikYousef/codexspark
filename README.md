@@ -1,59 +1,64 @@
-ConsoleUtilityApp.cpp
+# Binary to Decimal Converter binarynumberscounter.cpp
 
-A versatile C++ console application featuring daily Bible verses, bank account management, math utilities, and name encryption — all wrapped in a clean, colorful interface.
-Features
+A simple C++ console application that converts an 8-bit binary number (entered as a string) to its decimal equivalent.
 
-📖 Daily Bible Verses: Receive a fresh inspirational scripture each time you run the app.
+---
 
-🏦 Bank Management: Add accounts, list all accounts, and deposit money with ease.
+## Features
 
-📊 Math Utilities: Add, delete, display numbers, calculate sum and average.
+- **Input validation:** Ensures the binary string is exactly 8 characters long and contains only `0` or `1`.
+- **User-friendly interface:** Clear prompts, formatted headers, and informative error handling.
+- **Fast conversion:** Uses C++’s `stoi` function for efficient base-2 to decimal conversion.
 
-🔐 Name Encryption: Encrypt your name using a simple custom cipher.
+---
 
-🕒 Real-Time Clock: Displays the current time on the main menu.
+## Usage
 
-🎨 Colorful UI: Uses ANSI colors to enhance terminal readability.
+1. **Compile the program:**  
+   ```bash
+   g++ -o binary_converter main.cpp
+   ```
 
-🧹 Cross-platform Screen Clearing: Supports Windows and Unix systems.
+2. **Run the program:**  
+   ```bash
+   ./binary_converter
+   ```
 
-Getting Started
+3. **Follow the prompts:**  
+   - Enter an 8-bit binary number (e.g., `00011101`).
+   - The program will display the decimal equivalent.
 
-Prerequisites
-C++11 or higher compiler (g++, clang++, MSVC)
-Terminal supporting ANSI colors (recommended: Windows Terminal, PowerShell, Linux/macOS Terminal)
-Build Instructions
-Compile the application using:
+---
 
-g++ -std=c++11 -o ConsoleUtilityApp ConsoleUtilityApp.cpp
-Run the executable:
+## Example
 
-./ConsoleUtilityApp
-Usage
+```
+======================================
+     BINARY TO DECIMAL CONVERTER
+======================================
+Enter an 8-bit binary number (e.g., 00011101): 00011101
 
-Launch the program to view current time and a random Bible verse.
-Navigate the main menu using options 1-5.
-Perform banking operations, math calculations, or encrypt your name.
-Refresh Bible verses manually anytime.
-Input is validated for smooth experience.
-Follow on-screen prompts and press Enter to proceed when requested.
-File Overview
+--------------------------------------
+ Binary Input : 00011101
+ Decimal Value: 29
+--------------------------------------
+```
 
-ConsoleUtilityApp.cpp — The full source code with modular functions for each feature.
-Implements color-coded menus and messages.
-Handles user input safely and clearly.
-Features clean screen refreshing for smooth UI flow.
-Contributing
+---
 
-Contributions and suggestions are welcome! Feel free to open issues or pull requests to improve the app.
+## Input Validation
 
-License
+- **Valid Input:** Exactly 8 digits, each must be `0` or `1`.
+- **Invalid Input:** Any other format results in an error message and program exit.
 
-MIT License — free to use, modify, and share.
+---
 
-Created with care by [Your Name]
+## Technologies Used
 
-“Your word is a lamp to my feet and a light to my path.” — Psalm 119:105
+- C++ Standard Library (`iostream`, `string`)
+- C++11 or later (for `stoi` with base)
+
+---
 
 
 ## 🙌 Support & Contributions
@@ -68,7 +73,8 @@ If you found this project useful, fun, or inspiring — or if you're curious abo
 
 ---
 
-<img width="1470" alt="Skärmavbild 2025-07-08 kl  21 07 12" src="https://github.com/user-attachments/assets/5914397e-b87e-464d-be36-9635d1f10fa8" />
+<img width="1470" alt="Min resultat på 13 projekt i github" src="https://github.com/user-attachments/assets/a88a8d90-60bb-4783-bb70-be19d73f8385" />
+
 
 
 🙏 Thank You!
@@ -82,9 +88,9 @@ Here’s a snapshot of the traffic my projects have received recently. This show
 I’m proud of this progress and motivated to keep building tools that help developers
 
 Over the past 14 days, my 12 GitHub projects have received:
-	•	1691 views
-	•	105 clones
-	•	60 unique cloners
+	•	1945 views
+	•	124 clones
+	•	66 unique cloners
 
 I’m truly grateful for the interest and support from all users and visitors. Your engagement motivates me to keep improving and creating valuable tools.
 
