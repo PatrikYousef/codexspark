@@ -311,15 +311,15 @@ void godsayingyes() {
 
     vector<string> signs = {
         "\n✅ Doors open naturally — with peace, not pressure.",
-        "\n✅ You feel inner confirmation through Scripture or prayer.",
-        "\n✅ Wise counsel affirms your direction.",
-        "\n✅ The answer aligns with God's character and Word.",
-        "\n✅ You feel deep peace even if the outcome is uncertain.",
-        "\n✅ You see confirmation through repeated messages, verses, or themes.",
-        "\n✅ God provides resources or opportunities at the right time.",
-        "\n✅ A sense of joy or boldness accompanies your decision.",
-        "\n✅ Your step of faith bears fruit or blesses others.",
-        "\n✅ The Holy Spirit gives you clarity and courage to move forward."
+    "\n✅ You feel inner confirmation through Scripture and prayer.",
+    "\n✅ Wise, godly counsel affirms your direction.",
+    "\n✅ The answer aligns with God's character and His Word.",
+    "\n✅ You experience deep peace even when the outcome is uncertain.",
+    "\n✅ God confirms the direction through repeated messages, verses, or themes.",
+    "\n✅ Resources, opportunities, or support come at just the right time.",
+    "\n✅ A sense of joy, boldness, or excitement accompanies your decision.",
+    "\n✅ Your step of faith produces good fruit or blesses others.",
+    "\n✅ The Holy Spirit gives you clarity, courage, or peace after praying."
     };
 
     cout << "💡 Practical Signs God Might Be Saying YES:\n";
