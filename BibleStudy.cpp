@@ -147,6 +147,8 @@ void showgoodthing(const vector<string>& goodthings) {
     }
     waitForEnter();
 }
+
+
 void praise() {
     vector<BibleVerse> praiseVerses = {
         {"Psalm 150:6", "Let everything that has breath praise the Lord. Praise the Lord!"},
@@ -309,61 +311,88 @@ void godsayingyes() {
 
 void godsayingno() {
     cout << "\n🌧️==============================================🌧️\n";
-    cout << "     🙏 Signs God Is Saying NO to Our Prayers\n";
+    cout << "     🙏 Signs God Is Saying NO to Your Prayer\n";
     cout << "🌧️==============================================🌧️\n\n";
     waitForEnter();
 
-    cout << "🛡️ Sometimes God's 'No' is not rejection —\n";
-    cout << "it's redirection, protection, or preparation.\n\n";
+    vector<string> signsGodIsSayingNo = {
+        "❌ You feel a lack of peace despite continued prayer.",
+        "❌ Doors keep closing no matter how hard you try to open them.",
+        "❌ Godly counsel advises against the direction you're pursuing.",
+        "❌ The request goes against God's Word or character.",
+        "❌ There is clear conviction or warning from the Holy Spirit.",
+        "❌ The situation becomes more confusing or strained the more you push it.",
+        "❌ Your motives are self-centered rather than kingdom-centered.",
+        "❌ You experience delay, redirection, or complete stillness from God."
+    };
+
+    cout << "📜 Possible Signs God May Be Saying NO:\n";
+    cout << "----------------------------------------\n";
+    for (const auto& sign : signsGodIsSayingNo) {
+        cout << sign << endl;
+    }
+    cout << endl;
     waitForEnter();
 
     vector<pair<string, string>> verses = {
         { "📖 *2 Corinthians 12:8–9*", 
-          "\"My grace is sufficient for you,\nfor my power is made perfect in weakness.\"" },
+          "\"My grace is sufficient for you, for my power is made perfect in weakness.\"" },
 
         { "📖 *James 4:3*", 
           "\"You do not receive, because you ask with wrong motives.\"" },
 
         { "📖 *Isaiah 55:8–9*", 
-          "\"My thoughts are not your thoughts,\nneither are your ways my ways,\" declares the Lord." },
+          "\"My thoughts are not your thoughts, neither are your ways my ways,\" declares the Lord." },
 
         { "📖 *Proverbs 3:5–6*", 
-          "\"Trust in the Lord with all your heart\nand lean not on your own understanding.\"" },
-
-        { "📖 *Psalm 84:11*", 
-          "\"No good thing does He withhold from those who walk uprightly.\"" },
-
-        { "📖 *Hebrews 12:11*", 
-          "\"Later on, discipline produces a harvest of righteousness.\"" },
-
-        { "📖 *Acts 16:6–7*", 
-          "\"The Spirit of Jesus would not allow them.\"" },
+          "\"Trust in the Lord with all your heart and lean not on your own understanding.\"" },
 
         { "📖 *Job 1:21*", 
-          "\"The Lord gave and the Lord has taken away;\nblessed be the name of the Lord.\"" },
+          "\"The Lord gave and the Lord has taken away; blessed be the name of the Lord.\"" },
 
-        { "📖 *Deuteronomy 3:26*", 
-          "\"Do not speak to me anymore about this matter.\"" }
+        { "📖 *Deuteronomy 3:25–26*", 
+          "\"That is enough,\" the Lord said. \"Do not speak to me anymore about this matter.\"" },
+
+        { "📖 *2 Samuel 12:16–18*", 
+          "\"David pleaded with God for the child... But on the seventh day the child died.\"" },
+
+        { "📖 *Matthew 26:39*", 
+          "\"My Father, if it is possible, may this cup be taken from me. Yet not as I will, but as you will.\"" },
+
+        { "📖 *Isaiah 46:10*", 
+          "\"My purpose will stand, and I will do all that I please.\"" },
+
+        { "📖 *Romans 8:28*", 
+          "\"And we know that in all things God works for the good of those who love him...\"" },
+
+        { "📖 *Psalm 94:11*", 
+          "\"The Lord knows all human plans; he knows that they are futile.\"" },
+
+        { "📖 *John 11:6*", 
+          "\"When he heard that Lazarus was sick, he stayed where he was two more days.\"" },
+
+        { "📖 *Habakkuk 1:2*", 
+          "\"How long, Lord, must I call for help, but you do not listen?\"" },
+
+        { "📖 *Psalm 37:7*", 
+          "\"Be still before the Lord and wait patiently for him.\"" },
+
+        { "📖 *Ecclesiastes 3:11*", 
+          "\"He has made everything beautiful in its time.\"" }
     };
 
     for (const auto& verse : verses) {
-         clearScreen();
+        clearScreen();
         cout << verse.first << "\n";
         cout << "------------------------------\n";
         cout << verse.second << "\n\n";
         waitForEnter();
     }
 
-    vector<string> closing = {
-        "🌧️==============================================🌧️",
-        "🕊️ Even when God says NO, He is still good, wise, and faithful.",
-        "🛤️ Keep walking with Him — the journey is part of the purpose.",
-        "🌧️==============================================🌧️\n"
-    };
-
-    for (const string& line : closing) {
-        cout << line << endl;
-    }
+    cout << "🌧️==============================================🌧️\n";
+    cout << "🕊️ Even when God says NO, it may be His greatest mercy.\n";
+    cout << "🙏 Trust that His plan is higher and His timing is perfect.\n";
+    cout << "🌧️==============================================🌧️\n";
     waitForEnter();
 }
 
@@ -500,9 +529,10 @@ void gospels() {
 
 void playSound() {
 #ifdef _WIN32
-    system("afplay SongforBiblestudyfile.MP4 &");
+ system("(while true; do afplay SongforBiblestudyfile.MP4; done) &");
+    // Windows version
 #else
-    system("afplay SongforBiblestudyfile.MP4 &");
+    system("(while true; do afplay SongforBiblestudyfile.MP4; done) &");
 #endif
 }
 
