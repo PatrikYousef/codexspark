@@ -5,6 +5,7 @@
 #include <cstdlib>
 #include <ctime>
 #include <limits>  // för numeric_limits
+#include <iomanip> // for setw and formatting
 
 // OS-anpassad rensning av skärm
 #ifdef _WIN32
@@ -16,7 +17,6 @@
 void rensaSkärm() {
     system(CLEAR_COMMAND);
 }
-
 
 using namespace std;
 
@@ -34,82 +34,84 @@ bool safeReadInt(int& num) {
 void addNumber(vector<int>& numbers) {
     rensaSkärm();
     int num;
-    cout << "Enter a number to add: ";
+    cout << "➕ ✍️  Enter a number to add: ";
     if (!safeReadInt(num)) {
-        cout << "Invalid input, please enter a valid integer.\n";
+        cout << "❌ Invalid input, please enter a valid integer.\n";
         return;
     }
     numbers.push_back(num);
-    cout << num << " has been added.\n";
+    cout << "✅ " << num << " has been added to the list.\n";
 }
 
 void removeNumber(vector<int>& numbers) {
     rensaSkärm();
     int num;
-    cout << "Enter a number to remove: ";
+    cout << "🗑️ ✍️  Enter a number to remove: ";
     if (!safeReadInt(num)) {
-        cout << "Invalid input, please enter a valid integer.\n";
+        cout << "❌ Invalid input, please enter a valid integer.\n";
         return;
     }
     auto it = find(numbers.begin(), numbers.end(), num);
     if (it != numbers.end()) {
         numbers.erase(it);
-        cout << num << " has been removed.\n";
+        cout << "🛑 " << num << " has been removed from the list.\n";
     } else {
-        cout << num << " is not in the list.\n";
+        cout << "⚠️ " << num << " is not found in the list.\n";
     }
 }
 
 void showNumbers(const vector<int>& numbers) {
     rensaSkärm();
     if (numbers.empty()) {
-        cout << "The list is empty.\n";
+        cout << "📭 The list is empty.\n";
         return;
     }
     vector<int> sorted_numbers = numbers;
     sort(sorted_numbers.begin(), sorted_numbers.end());
-    cout << "List: ";
+    cout << "📋 List of numbers (" << sorted_numbers.size() << " items):\n";
+    cout << "-------------------------------------------------\n    ";
     for (int n : sorted_numbers) {
-        cout << n << " ";
+        cout << setw(5) << n << " ";
     }
-    cout << "\n";
+    cout << "\n-------------------------------------------------\n";
 }
 
 void showAverage(const vector<int>& numbers) {
     rensaSkärm();
     if (numbers.empty()) {
-        cout << "The list is empty, no average to calculate.\n";
+        cout << "📭 The list is empty, no average to calculate.\n";
         return;
     }
     double average = accumulate(numbers.begin(), numbers.end(), 0.0) / numbers.size();
-    cout << "Average value: " << average << "\n";
+    cout << fixed << setprecision(2);
+    cout << "📊 Average value: " << average << "\n";
 }
 
 void showCount(const vector<int>& numbers) {
     rensaSkärm();
-    cout << "Number of elements in the list: " << numbers.size() << "\n";
+    cout << "🔢 Number of elements in the list: " << numbers.size() << "\n";
 }
 
 void showRandomNumber(const vector<int>& numbers) {
     rensaSkärm();
     if (numbers.empty()) {
-        cout << "The list is empty, no random number can be chosen.\n";
+        cout << "📭 The list is empty, no random number can be chosen.\n";
         return;
     }
     int index = rand() % numbers.size();
-    cout << "Random number: " << numbers[index] << "\n";
+    cout << "🎲 Randomly selected number: " << numbers[index] << "\n";
 }
 
 void showSum(const vector<int>& numbers) {
     rensaSkärm();
     int total = accumulate(numbers.begin(), numbers.end(), 0);
-    cout << "Sum of all elements: " << total << "\n";
+    cout << "➕ Sum of all elements: " << total << "\n";
 }
 
 void showNegativeCount(const vector<int>& numbers) {
     rensaSkärm();
     int count = count_if(numbers.begin(), numbers.end(), [](int n){ return n < 0; });
-    cout << "Number of negative elements: " << count << "\n";
+    cout << "❄️ Number of negative elements: " << count << "\n";
 }
 
 int main() {
@@ -117,21 +119,26 @@ int main() {
     vector<int> numbers;
 
     while (true) {
-        cout << "\nChoose an option:\n"
-             << "1. Add number\n"
-             << "2. Remove number\n"
-             << "3. Show numbers\n"
-             << "4. Show average\n"
-             << "5. Show count\n"
-             << "6. Show random number\n"
-             << "7. Show sum\n"
-             << "8. Show count of negative numbers\n"
-             << "9. Exit\n"
-             << "Your choice: ";
+        cout << "\n==============================\n";
+        cout << "🧮  Welcome to Number Manager  🧮\n";
+        cout << "==============================\n\n";
+
+         cout << "==============================\n";
+        cout << "\n1️⃣  ➕ Add number\n";
+        cout << "\n2️⃣  🗑️ Remove number\n";
+        cout << "\n3️⃣  📋 Show numbers\n";
+        cout << "\n4️⃣  📊 Show average\n";
+        cout << "\n5️⃣  🔢 Show count\n";
+        cout << "\n6️⃣  🎲 Show random number\n";
+        cout << "\n7️⃣  ➕ Show sum\n";
+        cout << "\n8️⃣  ❄️ Show count of negative numbers\n";
+        cout << "\n9️⃣  🚪 Exit\n";
+         cout << "==============================\n";
+        cout << "👉 Your choice: ";
 
         int choice;
         if (!safeReadInt(choice)) {
-            cout << "Invalid choice, please enter a valid integer.\n";
+            cout << "❌ Invalid choice, please enter a valid integer.\n";
             continue; // fråga igen
         }
 
@@ -161,10 +168,11 @@ int main() {
                 showNegativeCount(numbers);
                 break;
             case 9:
-                cout << "Exiting the program.\n";
+                cout << "\n👋 Thank you for using Number Manager. Goodbye!\n";
                 return 0;
             default:
-                cout << "Invalid choice, please try again.\n";
+                cout << "❌ Invalid choice, please try again.\n";
         }
     }
 }
+
