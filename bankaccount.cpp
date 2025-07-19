@@ -182,28 +182,40 @@ void ageCheck() {
     }
 }
 
+// Function to add a new bank account with emojis and nice layout
 void addAccount(vector<BankAccount>& accounts) {
     try {
         ageCheck();
 
         BankAccount account;
-        cout << "Bank name: ";
+        cout << "\n🏦────────── Add New Bank Account ──────────🏦\n";
+
+        cout << "🏛️  Bank name: ";
         getline(cin, account.bankName);
-        cout << "First name: ";
+
+        cout << "👤 First name: ";
         getline(cin, account.firstName);
-        cout << "Last name: ";
+
+        cout << "👥 Last name: ";
         getline(cin, account.lastName);
-        cout << "Account number: ";
+
+        cout << "🔢 Account number: ";
         getline(cin, account.accountNumber);
-        cout << "CVV: ";
+
+        cout << "🔒 CVV: ";
         getline(cin, account.CVV);
-        cout << "Expiry date (MMYY): ";
+
+        cout << "📅 Expiry date (MMYY): ";
         getline(cin, account.expiryDate);
 
         accounts.push_back(account);
+
+        cout << "\n✅ Account successfully added for " 
+             << account.firstName << " " << account.lastName << "!\n";
+        cout << "🏦────────────────────────────────────────────🏦\n\n";
     } catch (const exception& e) {
         clearScreen();
-        cout << "An error occurred: " << e.what() << endl;
+        cout << "❌ An error occurred: " << e.what() << endl;
     }
 }
 
@@ -248,41 +260,47 @@ void deleteAccount(vector<BankAccount>& accounts) {
     }
 }
 
+// Function to manage funds with beautiful layout and emojis
 void manageFunds(vector<BankAccount>& accounts) {
     clearScreen();
-    cout << "===============================" << endl;
-    cout << "       Welcome to the Bank     " << endl;
-    cout << "===============================" << endl;
-    cout << "1. Deposit money" << endl;
-    cout << "2. Withdraw money" << endl;
+    
+    cout << "\n💰===========================================💰\n";
+    cout << "         🏦 WELCOME TO BANKING FUNDS 🏦        \n";
+    cout << "💰===========================================💰\n";
+    cout << "1️⃣  ➤ Deposit money 💵\n";
+    cout << "2️⃣  ➤ Withdraw money 💸\n";
+    cout << "💰-------------------------------------------💰\n";
 
     int choice;
-    safeInputInt(choice, "Enter your choice (1 or 2): ", 1, 2);
+    safeInputInt(choice, "👉 Enter your choice (1 or 2): ", 1, 2);
 
     string name;
-    cout << "Enter the first name for the account: ";
+    cout << "👤 Enter the *first name* for the account: ";
     getline(cin, name);
 
     for (auto& account : accounts) {
         if (account.firstName == name) {
             int amount;
-            safeInputInt(amount, (choice == 1 ? "Deposit amount: " : "Withdraw amount: "));
+            safeInputInt(amount, (choice == 1 ? "💵 Enter deposit amount: " : "💸 Enter withdrawal amount: "));
 
             if (choice == 1 && amount > 0) {
                 account.balance += amount;
-                cout << name << "'s new balance: $" << account.balance << " (Deposited $" << amount << ")" << endl;
+                cout << "✅ $" << amount << " deposited successfully!\n";
+                cout << "📊 " << name << "'s new balance: 💰 $" << account.balance << "\n";
             } else if (choice == 2 && amount > 0 && amount <= account.balance) {
                 account.balance -= amount;
-                cout << name << "'s new balance: $" << account.balance << " (Withdrew $" << amount << ")" << endl;
+                cout << "✅ $" << amount << " withdrawn successfully!\n";
+                cout << "📊 " << name << "'s new balance: 💰 $" << account.balance << "\n";
             } else {
-                cout << "Invalid amount or insufficient funds." << endl;
+                cout << "⚠️ Invalid amount or insufficient funds.\n";
             }
             return;
         }
     }
 
-    cout << "No account found with the name '" << name << "'." << endl;
+    cout << "❌ No account found with the name '" << name << "'.\n";
 }
+
 
 // ===== MENUS =====
 void showStartupMenu(vector<User>& users, string& loggedInUser) {
@@ -309,13 +327,21 @@ void showStartupMenu(vector<User>& users, string& loggedInUser) {
 void showBankingMenu(vector<BankAccount>& accounts, vector<User>& users) {
     while (true) {
         clearScreen();
-        cout << "\nSelect an option:" << endl;
-        cout << "1. Add bank account" << endl;
-        cout << "2. Show all accounts" << endl;
-        cout << "3. Delete a bank account" << endl;
-        cout << "4. Manage funds" << endl;
-        cout << "5. Exit" << endl;
-        cout << "6. Logout" << endl;
+    // Function to display the bank account management menu with emojis
+
+    cout << "\n";
+    cout << "💼━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━💼\n";
+    cout << "           🏦 BANK ACCOUNT MENU 🏦\n";
+    cout << "💼━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━💼\n";
+    cout << "\n1️⃣  ➤ 🏦 Add bank account\n";
+    cout << "\n2️⃣  ➤ 📄 Show all accounts\n";
+    cout << "\n3️⃣  ➤ 🗑️ Delete a bank account\n";
+    cout << "\n4️⃣  ➤ 💰 Manage funds\n";
+    cout << "\n5️⃣  ➤ 🚪 Exit\n";
+    cout << "\n6️⃣  ➤ 🔐 Logout\n";
+    cout << "💼━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━💼\n";
+    cout << "👉 Please select an option (1-6): ";
+
 
         int choice;
         safeInputInt(choice, "Your choice: ", 1, 6);
