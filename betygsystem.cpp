@@ -18,7 +18,7 @@ void clearScreen() {
 }
 
 void pause() {
-    cout << "\nPress Enter to continue...";
+    cout << "\n⏸️  Press Enter to continue...";
     cin.ignore(numeric_limits<streamsize>::max(), '\n');
     cin.get();
 }
@@ -38,12 +38,12 @@ struct Grade {
 // Add a grade
 void addGrade(vector<Grade>& system) {
     Grade g;
-    cout << "\n--- Add Grade ---\n";
-    cout << "First name: ";
+    cout << "\n📝 --- Add Grade --- 📝\n";
+    cout << "👤 First name: ";
     cin >> g.firstName;
-    cout << "Last name: ";
+    cout << "👤 Last name: ";
     cin >> g.lastName;
-    cout << "Grade (A-F): ";
+    cout << "🏅 Grade (A-F): ";
     cin >> g.grade;
     g.grade = toupper(g.grade);
 
@@ -58,19 +58,19 @@ void addGrade(vector<Grade>& system) {
 // Remove a specific grade
 void removeGrade(vector<Grade>& system) {
     Grade g;
-    cout << "\n--- Remove Grade ---\n";
-    cout << "First name: ";
+    cout << "\n🗑️  --- Remove Grade --- 🗑️\n";
+    cout << "👤 First name: ";
     cin >> g.firstName;
-    cout << "Last name: ";
+    cout << "👤 Last name: ";
     cin >> g.lastName;
-    cout << "Grade: ";
+    cout << "🏅 Grade: ";
     cin >> g.grade;
     g.grade = toupper(g.grade);
 
     auto it = remove(system.begin(), system.end(), g);
     if (it != system.end()) {
         system.erase(it, system.end());
-        cout << "\n🗑️  Entry deleted.\n";
+        cout << "\n🗑️  Entry deleted successfully.\n";
     } else {
         cout << "\n⚠️  No matching entry found.\n";
     }
@@ -78,15 +78,15 @@ void removeGrade(vector<Grade>& system) {
 
 // Show all grades
 void showGrades(const vector<Grade>& system) {
-    cout << "\n--- Grade List ---\n";
+    cout << "\n📋 --- Grade List --- 📋\n";
     if (system.empty()) {
         cout << "📭 No grades added yet.\n";
         return;
     }
 
-    cout << left << setw(20) << "First Name" 
-         << setw(20) << "Last Name" 
-         << "Grade\n";
+    cout << left << setw(20) << "👤 First Name" 
+         << setw(20) << "👤 Last Name" 
+         << "🏅 Grade\n";
     cout << string(50, '-') << '\n';
 
     for (const auto& g : system) {
@@ -98,13 +98,13 @@ void showGrades(const vector<Grade>& system) {
 
 // Show main menu and return user choice
 int menu() {
-    cout << "======= GRADE SYSTEM =======\n";
-    cout << "1. Add grade\n"
-         << "2. Remove grade\n"
-         << "3. Show grades\n"
-         << "4. Exit\n"
-         << "============================\n"
-         << "Choice: ";
+    cout << "\n🎓 ======= GRADE SYSTEM ======= 🎓\n";
+cout << "\n1️⃣  ✏️ Add Grade\n";
+cout << "\n2️⃣  🗑️ Remove Grade\n";
+cout << "\n3️⃣  📋 Show Grades\n";
+cout << "\n4️⃣  🚪 Exit\n";
+cout << "===============================\n"
+         << "👉 Choice: ";
 
     int choice;
     if (!(cin >> choice)) {
