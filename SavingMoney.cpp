@@ -28,80 +28,84 @@ void clearScreen() {
     system(CLEAR_COMMAND);
 }
 
-// Function to add a new user
+// Function to add a new user with beautiful layout and emojis
 void addUser(vector<Payment>& users) {
     Payment user;
     string input;
 
-    cout << "\n--- Add a New User ---\n";
+    cout << "\n📝 ──────────────── Add a New User ──────────────── 📝\n";
 
     // Get first name
-    cout << "First name: ";
+    cout << "👤 First name: ";
     getline(cin, user.firstName);
 
     // Get last name
-    cout << "Last name: ";
+    cout << "👥 Last name: ";
     getline(cin, user.lastName);
 
-    // Get income and convert to number
-    cout << "Income (numbers only): ";
+    // Get income
+    cout << "💵 Monthly income (numbers only): ";
     getline(cin, input);
     user.income = stoll(input);
 
     // Get monthly bills
-    cout << "Monthly bills: ";
+    cout << "📄 Monthly bills: ";
     getline(cin, input);
     user.bills = stoll(input);
 
     // Get monthly food expenses
-    cout << "Monthly food expenses: ";
+    cout << "🍽️ Monthly food expenses: ";
     getline(cin, input);
     user.food = stoll(input);
 
     // Get monthly clothing expenses
-    cout << "Monthly clothing expenses: ";
+    cout << "👗 Monthly clothing expenses: ";
     getline(cin, input);
     user.clothes = stoll(input);
 
     // Add user to the vector
     users.push_back(user);
-    cout << "✅ User has been added successfully!\n";
+
+    cout << "\n✅ User \"" << user.firstName << " " << user.lastName << "\" has been added successfully!\n";
+    cout << "🎉 Great job staying on top of your finances!\n";
+    cout << "------------------------------------------------------\n";
 }
 
-// Function to display all users
+// Function to display all users with clean straight layout
 void showUsers(const vector<Payment>& users) {
     if (users.empty()) {
-        cout << "\n📭 No users to display.\n";
+        cout << "\n📭 No users to display. Add some to get started!\n";
         return;
     }
 
-    cout << "\n📋 --- User List --- 📋\n\n";
+    cout << "\n📋 ======== USER LIST ======== 📋\n\n";
 
-    // Print table headers with formatting
-    cout << left << setw(3) << "#"
-         << setw(15) << "First Name"
-         << setw(15) << "Last Name"
-         << setw(12) << "Income"
-         << setw(12) << "Bills"
-         << setw(12) << "Food"
-         << setw(12) << "Clothes" << "\n";
+    // Print clean table headers
+    cout << left
+         << setw(5)  << "No."
+         << setw(16) << "First Name"
+         << setw(16) << "Last Name"
+         << setw(14) << "Income"
+         << setw(14) << "Bills"
+         << setw(14) << "Food"
+         << setw(14) << "Clothes" << "\n";
 
-    cout << string(81, '-') << "\n";
+    cout << string(93, '-') << "\n";
 
     int index = 1;
-    // Loop through users and print their info
     for (const auto& user : users) {
-        cout << left << setw(3) << index++
-             << setw(15) << user.firstName
-             << setw(15) << user.lastName
-             << setw(12) << user.income
-             << setw(12) << user.bills
-             << setw(12) << user.food
-             << setw(12) << user.clothes << "\n";
+        cout << left
+             << setw(5)  << index++
+             << setw(16) << user.firstName
+             << setw(16) << user.lastName
+             << setw(14) << user.income
+             << setw(14) << user.bills
+             << setw(14) << user.food
+             << setw(14) << user.clothes << "\n";
     }
 
-    cout << string(81, '=') << "\n";
-    cout << "📦 Total users: " << users.size() << "\n";
+    cout << string(93, '=') << "\n";
+    cout << "📦 Total users in system: " << users.size() << "\n";
 }
 
 // Function to calculate savings for a user by first name
@@ -150,18 +154,21 @@ void removeUser(vector<Payment>& users) {
     }
 }
 
-// Function to display the main menu
+// Function to display the main menu with emojis and beautiful layout
 void showMenu() {
-    cout << "\n============================\n";
-    cout << "     💸 Personal Finance\n";
-    cout << "============================\n";
-    cout << "1. Add a new user\n";
-    cout << "2. Show all users\n";
-    cout << "3. Calculate savings\n";
-    cout << "4. Remove a user\n";
-    cout << "5. Exit\n";
-    cout << "Enter your choice (1-5): ";
+    cout << "\n";
+    cout << "🌟══════════════════════════════════════🌟\n";
+    cout << "        💸  PERSONAL FINANCE APP  💸     \n";
+    cout << "🌟══════════════════════════════════════🌟\n";
+    cout << "\n📌  1️⃣  ➤ Add a new user\n";
+    cout << "\n📋  2️⃣  ➤ Show all users\n";
+    cout << "\n💰  3️⃣  ➤ Calculate savings\n";
+    cout << "\n❌  4️⃣  ➤ Remove a user\n";
+    cout << "\n🚪  5️⃣  ➤ Exit the program\n";
+    cout << "\n🌟══════════════════════════════════════🌟\n";
+    cout << "👉 Please enter your choice (1-5): ";
 }
+
 
 int main() {
     vector<Payment> users;   // Vector to store users
