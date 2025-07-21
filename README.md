@@ -1,107 +1,114 @@
 # 👋 Välkommen till min GitHub-profil – Till Guds ära ✝️
 
-Här finns en samling av mina programmeringsprojekt i C++, Python, C och mer, med fokus på tro, ekonomi, hälsa, verktyg, spel och utbildning. Alla projekt är skapade med passion och syfte att hjälpa och inspirera.
+Jag heter Yousef Patrik och brinner för programmering, tro och att skapa verktyg som kan göra skillnad. Här hittar du mina projekt i C++, Python, C och andra språk – allt med fokus på tro, ekonomi, hälsa, produktivitet, utbildning och mycket mer. 
+
+Varje projekt är skapat med passion och en önskan att inspirera, hjälpa och förmedla något meningsfullt.
 
 ---
 
-## 📚 Projektlista – Alla mina filer och applikationer
+## 📚 Projektöversikt – Utforska mina verk
 
 ### ✝️ Tro & Bibel
 - **BibleStudy.cpp**  
-  Konsolapp för bibelstudier med verser om tro, synd, frukt av Anden och tecken från Gud.
+  En konsolapplikation för bibelstudier som samlar verser om tro, synd, frukter av Anden och tecken från Gud.  
 - **SongforBiblestudyfile.MP4**  
-  Video med en sång för bibelstudier.
+  En inspirerande video med sång för bibelstudier och meditation.
 
 ### 🛠️ Verktyg & Konsolappar
 - **ConsoleUtilityApp.cpp**  
-  Samling praktiska konsolverktyg.
+  En samling praktiska och användarvänliga konsolverktyg för olika ändamål.  
 - **decrypt_encryptor.cpp**  
-  Kryptering och dekryptering av text och namn.
+  Enkel men säker kryptering och dekryptering av text och namn.  
 - **contactinformation.cpp**  
-  Hantering av kontaktuppgifter.
+  Effektiv hantering av kontaktuppgifter.  
 - **count_vowels.py**  
-  Räknar vokaler i en given text.
+  Python-skript för att räkna vokaler i text.  
 - **gusseing_number.py**  
-  Ett enkelt gissningsspel i Python.
+  Ett roligt och lärorikt gissningsspel skrivet i Python.  
 - **kassa.py**  
-  Kassasystem.
+  Ett enkelt kassasystem för transaktionshantering.
 
 ### 💰 Ekonomi & Sparande
 - **Financetracker.py**  
-  Pythonprogram för ekonomisk översikt och sparmål.
+  Verktyg för att få koll på ekonomi, budget och sparmål.  
 - **SavingMoney.cpp**  
-  Konsolapp för sparande och budget.
+  Konsolapp som hjälper dig att planera och hålla koll på ditt sparande.  
 - **LoanManagement.cpp**  
-  Hantering av lån, betalningar och amorteringar.
+  Ett program för lån, betalningar och amorteringar.  
 - **StockMate.cpp**  
-  Verktyg för aktieanalys.
+  Ett verktyg för att analysera och följa aktiemarknaden.  
 - **bankaccount.cpp**  
-  Bankkontoapp med inloggning och transaktioner.
+  Komplett bankkonto-app med inloggning och transaktionshistorik.  
 - **savings_tracker.cpp**  
-  Sparspårning och målhantering.
+  För avancerad spårning av sparmål och framsteg.
 
 ### 🏥 Medicin & Hälsa
 - **MedicaidSystem.cpp**  
-  System för Medicaid-förmåner.
+  System för effektiv administration av Medicaid-förmåner.  
 - **PatientPrescriptionSystem.cpp**  
-  Hantering av patienters medicinrecept.
+  Hantering och spårning av patienters medicinrecept.
 
 ### ❤️ Relationer & Råd
 - **Relationship Advice Console App.cpp**  
-  Konsolprogram som ger relationstips.
+  Konsolbaserat program som erbjuder praktiska och hjärtliga relationstips.
 
 ### 🎓 Skola & Utbildning
 - **betygsystem.cpp**  
-  System för betygsättning.
+  Ett system för betygsättning och bedömning.  
 - **gpa.cpp**  
-  GPA-beräknare.
+  Enkel GPA-beräknare för studenter.
 
 ### 🚗 Diverse & Hobby
 - **bilar.cpp**  
-  Bilrelaterade funktioner och info.
+  Program med funktioner och information relaterat till bilar.
 
 ### 🧮 Matematik & Programmering
 - **matte.cpp**  
-  Matteverktyg för olika beräkningar.
+  En samling matteverktyg för olika typer av beräkningar.  
 - **calculation_area_and_permiters.py**  
-  Python-script för area och omkrets.
+  Python-script för beräkning av area och omkrets.  
 - **sort5numbers.c**  
-  Sortering av fem tal.
+  Program för att sortera fem tal.  
 - **sortletters.c**  
-  Sortering av bokstäver.
+  Sorterar bokstäver alfabetiskt.  
 - **binarynumberscounter.cpp**  
-  Räkna binära siffror.
+  Räknar binära siffror i data.
 
 ### 📅 Kalender & Uppgiftshantering
 - **todolist_calender.cpp**  
-  Todo- och kalenderapp med månader och påminnelser.
+  Komplett todo- och kalenderapplikation med stöd för påminnelser och månadsvyer.
 
 ### 📊 Datahantering & Tabeller
 - **table.py**  
-  Python-skript för tabellhantering.
+  Python-skript för hantering och visning av tabeller.
 
 ### 🔢 Övrigt
 - **changefromchartointiger.c**  
-  Konvertering från char till int.
+  Program för konvertering från char till int.
 
-### 🎥 Sparande - Video
+### 🎥 Video kopplat till sparande
 - **songforsaving_tracker.MP4**  
-  Video kopplad till sparandeprojektet.
+  Inspirerande video relaterad till sparandeprojektet.
 
 ---
 
-## 💻 Hur du använder projekten
+## 💻 Hur du kommer igång
 
-De flesta är konsolbaserade och körs i C++ eller Python-miljö. Varje projekt kan kompileras eller köras direkt. För detaljer och instruktioner, kolla varje projekts egna README om sådan finns.
+De flesta av mina projekt är konsolbaserade och kan kompileras och köras direkt i en C++- eller Python-miljö. För detaljerade instruktioner, kika gärna på README-filerna i respektive projekt om de finns.
 
 ---
 
-## 📫 Kontakta mig
+## 📫 Vill du komma i kontakt?
 
-Har du frågor, idéer eller vill samarbeta?  
-Skicka gärna meddelande via GitHub eller mail:  
+Jag uppskattar alltid att få höra från andra – vare sig du har frågor, feedback eller idéer för samarbeten. Du når mig enklast via GitHub eller på mail:
+
 **yousefpatrik@gmail.com**
 
 ---
 
-🙏 Tack för att du besöker min sida – må Gud välsigna dig!
+🙏 Tack för att du tog dig tid att besöka min profil. Må Guds välsignelse vara med dig i allt du gör!
+
+---
+
+*“Låt allt vad ni gör ske i kärlek.” – 1 Korinthierbrevet 16:14*
+
