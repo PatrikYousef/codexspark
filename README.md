@@ -1,83 +1,107 @@
-# 👋 Välkommen till mina GitHub-projekt – Till Guds ära ✝️
+# 👋 Välkommen till min GitHub-profil – Till Guds ära ✝️
 
-Jag heter [Ditt Namn] och är passionerad programmerare som bygger verktyg, appar och system i C++, Python, C och andra språk. Mina projekt syftar till att hjälpa människor inom områden som tro, ekonomi, hälsa och produktivitet.
+Här finns en samling av mina programmeringsprojekt i C++, Python, C och mer, med fokus på tro, ekonomi, hälsa, verktyg, spel och utbildning. Alla projekt är skapade med passion och syfte att hjälpa och inspirera.
 
 ---
 
-## 🚀 Översikt av mina projekt
+## 📚 Projektlista – Alla mina filer och applikationer
 
-Här är en samling av mina mest betydelsefulla projekt, organiserade efter tema och syfte.
-
-### 📖 Tro & Bibelstudier
+### ✝️ Tro & Bibel
 - **BibleStudy.cpp**  
-  En konsolapp som visar Bibelverser, indelat i ämnen som synd, frukt av Anden och tecken från Gud.  
+  Konsolapp för bibelstudier med verser om tro, synd, frukt av Anden och tecken från Gud.
 - **SongforBiblestudyfile.MP4**  
-  En inspirerande sång för bibelstudier.
+  Video med en sång för bibelstudier.
+
+### 🛠️ Verktyg & Konsolappar
+- **ConsoleUtilityApp.cpp**  
+  Samling praktiska konsolverktyg.
+- **decrypt_encryptor.cpp**  
+  Kryptering och dekryptering av text och namn.
+- **contactinformation.cpp**  
+  Hantering av kontaktuppgifter.
+- **count_vowels.py**  
+  Räknar vokaler i en given text.
+- **gusseing_number.py**  
+  Ett enkelt gissningsspel i Python.
+- **kassa.py**  
+  Kassasystem.
 
 ### 💰 Ekonomi & Sparande
 - **Financetracker.py**  
-  Ett Pythonprogram för att hålla koll på ekonomi och sparmål.  
+  Pythonprogram för ekonomisk översikt och sparmål.
 - **SavingMoney.cpp**  
-  Konsolapp för att hjälpa till med sparande och budget.  
+  Konsolapp för sparande och budget.
 - **LoanManagement.cpp**  
-  Hantering av lån, amortering och betalningar i C++.  
+  Hantering av lån, betalningar och amorteringar.
 - **StockMate.cpp**  
-  Verktyg för att följa och analysera aktier.  
+  Verktyg för aktieanalys.
 - **bankaccount.cpp**  
-  Bankkonto-applikation med inloggning och transaktioner.
+  Bankkontoapp med inloggning och transaktioner.
+- **savings_tracker.cpp**  
+  Sparspårning och målhantering.
 
-### 🏥 Medicin & Hälsovård
+### 🏥 Medicin & Hälsa
 - **MedicaidSystem.cpp**  
-  System för administration av Medicaid-förmåner.  
+  System för Medicaid-förmåner.
 - **PatientPrescriptionSystem.cpp**  
-  Hantering av patienters recept och mediciner.
+  Hantering av patienters medicinrecept.
 
 ### ❤️ Relationer & Råd
 - **Relationship Advice Console App.cpp**  
-  Konsolprogram som ger relationstips och vägledning.
+  Konsolprogram som ger relationstips.
 
-### 🧮 Matematik & Verktyg
+### 🎓 Skola & Utbildning
+- **betygsystem.cpp**  
+  System för betygsättning.
+- **gpa.cpp**  
+  GPA-beräknare.
+
+### 🚗 Diverse & Hobby
+- **bilar.cpp**  
+  Bilrelaterade funktioner och info.
+
+### 🧮 Matematik & Programmering
 - **matte.cpp**  
-  Matteverktyg med olika beräkningar och funktioner.  
+  Matteverktyg för olika beräkningar.
 - **calculation_area_and_permiters.py**  
-  Python-skript för beräkning av areor och omkretsar.  
+  Python-script för area och omkrets.
 - **sort5numbers.c**  
-  Sortering av fem tal i C.  
+  Sortering av fem tal.
 - **sortletters.c**  
-  Sortering av bokstäver i C.  
-- **count_vowels.py**  
-  Räknar vokaler i text.
+  Sortering av bokstäver.
+- **binarynumberscounter.cpp**  
+  Räkna binära siffror.
 
 ### 📅 Kalender & Uppgiftshantering
 - **todolist_calender.cpp**  
-  Komplett todo- och kalenderapplikation med påminnelser.
+  Todo- och kalenderapp med månader och påminnelser.
 
-### 🔐 Kryptering & Säkerhet
-- **decrypt_encryptor.cpp**  
-  Verktyg för kryptering och dekryptering av text och namn.
+### 📊 Datahantering & Tabeller
+- **table.py**  
+  Python-skript för tabellhantering.
 
-### 📋 Diverse Verktyg
-- **contactinformation.cpp**  
-  Hantering av kontaktinformation.  
-- **gusseing_number.py**  
-  Gissningsspel i Python.  
-- **kassa.py**  
-  Kassaprogram.
+### 🔢 Övrigt
+- **changefromchartointiger.c**  
+  Konvertering från char till int.
+
+### 🎥 Sparande - Video
+- **songforsaving_tracker.MP4**  
+  Video kopplad till sparandeprojektet.
 
 ---
 
-## 💻 Hur du använder mina projekt
+## 💻 Hur du använder projekten
 
-De flesta projekt är konsolbaserade och kan kompileras och köras direkt i en C++- eller Python-miljö. Varje projekt har en README med mer detaljerad instruktion.
+De flesta är konsolbaserade och körs i C++ eller Python-miljö. Varje projekt kan kompileras eller köras direkt. För detaljer och instruktioner, kolla varje projekts egna README om sådan finns.
 
 ---
 
 ## 📫 Kontakta mig
 
-Om du har frågor, feedback eller vill samarbeta, tveka inte att kontakta mig via GitHub eller mail:  
-**[din-email@example.com]**
+Har du frågor, idéer eller vill samarbeta?  
+Skicka gärna meddelande via GitHub eller mail:  
+**yousefpatrik@gmail.com**
 
 ---
 
-## 🙏 Tack för att du tittade in!  
-Må Gud välsigna dig och ditt arbete!  
+🙏 Tack för att du besöker min sida – må Gud välsigna dig!
