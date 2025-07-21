@@ -100,7 +100,13 @@ De flesta av mina projekt är konsolbaserade och kan kompileras och köras direk
 
 ## 📫 Vill du komma i kontakt?
 
-Jag uppskattar alltid att få höra från andra – vare sig du har frågor, feedback eller idéer för samarbeten. Du når mig enklast via GitHub eller på mail:
+Jag är just nu aktivt på jakt efter en tjänst som systemutvecklare där jag kan använda och vidareutveckla mina programmeringskunskaper. Jag har flera egna projekt publicerade på GitHub som visar min erfarenhet och mina färdigheter inom systemutveckling, och jag hoppas att ni vill ta en titt på dem.
+
+Om ni finner att min profil passar ert team, skulle jag uppskatta möjligheten att få en intervju där jag kan berätta mer om mina kunskaper och hur jag kan bidra till er verksamhet.
+
+Jag är alltid öppen för dialog – oavsett om ni har frågor, feedback eller förslag på samarbeten. Ni når mig enklast via GitHub eller per e-post.
+
+Tack för er tid, jag ser fram emot att höra från er!
 
 **yousefpatrik@gmail.com**
 
