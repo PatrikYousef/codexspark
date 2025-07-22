@@ -1,106 +1,110 @@
-# 👋 Välkommen till min GitHub-profil – Till Guds ära ✝️
+# 👋 Welcome to My GitHub Profile – To the Glory of God ✝️
 
-Jag heter Yousef Patrik och brinner för programmering, tro och att skapa verktyg som kan göra skillnad. Här hittar du mina projekt i C++, Python, C och andra språk – allt med fokus på tro, ekonomi, hälsa, produktivitet, utbildning och mycket mer. 
+My name is **Yousef Patrik**, and I’m passionate about **programming**, **faith**, and **creating tools that can make a difference**.  
+Here you’ll find my projects in **C++**, **Python**, **C**, and other languages – all focused on **faith**, **finance**, **health**, **productivity**, **education**, and more.
 
-Varje projekt är skapat med passion och en önskan att inspirera, hjälpa och förmedla något meningsfullt.
+Each project is created with **passion** and a desire to **inspire, help, and share something meaningful**.
 
 ---
 
-## 📚 Projektöversikt – Utforska mina verk
+## 📚 Project Overview – Explore My Work
 
-### ✝️ Tro & Bibel
+### ✝️ Faith & Bible
 - **BibleStudy.cpp**  
-  En konsolapplikation för bibelstudier som samlar verser om tro, synd, frukter av Anden och tecken från Gud.  
+  A console application for Bible study that gathers verses about faith, sin, fruits of the Spirit, and signs from God.
 - **SongforBiblestudyfile.MP4**  
-  En inspirerande video med sång för bibelstudier och meditation.
+  An inspiring video with a song for Bible study and meditation.
 
-### 🛠️ Verktyg & Konsolappar
+### 🛠️ Tools & Console Apps
 - **ConsoleUtilityApp.cpp**  
-  En samling praktiska och användarvänliga konsolverktyg för olika ändamål.  
+  A collection of practical and user-friendly console tools for various purposes.
 - **decrypt_encryptor.cpp**  
-  Enkel men säker kryptering och dekryptering av text och namn.  
+  Simple but secure text and name encryption/decryption.
 - **contactinformation.cpp**  
-  Effektiv hantering av kontaktuppgifter.  
+  Efficient contact information management.
 - **count_vowels.py**  
-  Python-skript för att räkna vokaler i text.  
+  A Python script for counting vowels in a text.
 - **gusseing_number.py**  
-  Ett roligt och lärorikt gissningsspel skrivet i Python.  
+  A fun and educational guessing game written in Python.
 - **kassa.py**  
-  Ett enkelt kassasystem för transaktionshantering.
+  A simple cash register system for transaction management.
 
-### 💰 Ekonomi & Sparande
+### 💰 Finance & Saving
 - **Financetracker.py**  
-  Verktyg för att få koll på ekonomi, budget och sparmål.  
+  A tool for keeping track of finances, budgeting, and savings goals.
 - **SavingMoney.cpp**  
-  Konsolapp som hjälper dig att planera och hålla koll på ditt sparande.  
+  A console app that helps you plan and monitor your savings.
 - **LoanManagement.cpp**  
-  Ett program för lån, betalningar och amorteringar.  
+  A program for managing loans, payments, and amortizations.
 - **StockMate.cpp**  
-  Ett verktyg för att analysera och följa aktiemarknaden.  
+  A tool for analyzing and tracking the stock market.
 - **bankaccount.cpp**  
-  Komplett bankkonto-app med inloggning och transaktionshistorik.  
+  A complete bank account app with login and transaction history.
 - **savings_tracker.cpp**  
-  För avancerad spårning av sparmål och framsteg.
+  For advanced tracking of savings goals and progress.
 
-### 🏥 Medicin & Hälsa
+### 🏥 Medicine & Health
 - **MedicaidSystem.cpp**  
-  System för effektiv administration av Medicaid-förmåner.  
+  A system for effective administration of Medicaid benefits.
 - **PatientPrescriptionSystem.cpp**  
-  Hantering och spårning av patienters medicinrecept.
+  Management and tracking of patients' medication prescriptions.
 
-### ❤️ Relationer & Råd
+### ❤️ Relationships & Advice
 - **Relationship Advice Console App.cpp**  
-  Konsolbaserat program som erbjuder praktiska och hjärtliga relationstips.
+  A console-based program offering practical and heartfelt relationship tips.
 
-### 🎓 Skola & Utbildning
+### 🎓 School & Education
 - **betygsystem.cpp**  
-  Ett system för betygsättning och bedömning.  
+  A grading and assessment system.
 - **gpa.cpp**  
-  Enkel GPA-beräknare för studenter.
+  A simple GPA calculator for students.
 
-### 🚗 Diverse & Hobby
+### 🚗 Miscellaneous & Hobby
 - **bilar.cpp**  
-  Program med funktioner och information relaterat till bilar.
+  A program with features and information related to cars.
 
-### 🧮 Matematik & Programmering
+### 🧮 Math & Programming
 - **matte.cpp**  
-  En samling matteverktyg för olika typer av beräkningar.  
+  A collection of math tools for various calculations.
 - **calculation_area_and_permiters.py**  
-  Python-script för beräkning av area och omkrets.  
+  Python script for calculating area and perimeter.
 - **sort5numbers.c**  
-  Program för att sortera fem tal.  
+  Program for sorting five numbers.
 - **sortletters.c**  
-  Sorterar bokstäver alfabetiskt.  
+  Sorts letters alphabetically.
 - **binarynumberscounter.cpp**  
-  Räknar binära siffror i data.
+  Counts binary digits in data.
 
-### 📅 Kalender & Uppgiftshantering
+### 📅 Calendar & Task Management
 - **todolist_calender.cpp**  
-  Komplett todo- och kalenderapplikation med stöd för påminnelser och månadsvyer.
+  A complete to-do list and calendar application with support for reminders and monthly views.
 
-### 📊 Datahantering & Tabeller
+### 📊 Data Management & Tables
 - **table.py**  
-  Python-skript för hantering och visning av tabeller.
+  A Python script for managing and displaying tables.
 
-### 🔢 Övrigt
+### 🔢 Miscellaneous
 - **changefromchartointiger.c**  
-  Program för konvertering från char till int.
+  Program for converting from char to int.
 
-### 🎥 Video kopplat till sparande
+### 🎥 Saving-Related Video
 - **songforsaving_tracker.MP4**  
-  Inspirerande video relaterad till sparandeprojektet.
+  An inspiring video related to the savings project.
 
 ---
 
-## 💻 Hur du kommer igång
+## 💻 Getting Started
 
-De flesta av mina projekt är konsolbaserade och kan kompileras och köras direkt i en C++- eller Python-miljö. För detaljerade instruktioner, kika gärna på README-filerna i respektive projekt om de finns.
-
----
-
-🙏 Tack för att du tog dig tid att besöka min profil. Må Guds välsignelse vara med dig i allt du gör!
+Most of my projects are console-based and can be compiled and run directly in a **C++** or **Python** environment.  
+For detailed instructions, feel free to check the `README.md` files in each project if available.
 
 ---
 
-*“Låt allt vad ni gör ske i kärlek.” – 1 Korinthierbrevet 16:14*
+## 🙏 Thank You
 
+Thank you for taking the time to visit my profile.  
+**May God’s blessing be with you in all you do!**
+
+> *“Let all that you do be done in love.” – 1 Corinthians 16:14*
+
+---
