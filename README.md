@@ -1,4 +1,4 @@
-# 🏨 Royal Hotel Booking System
+# 🏨 Royal Hotel Booking System hotel_booking_system.cpp
 
 Welcome to the **Royal Hotel Booking System** — a modern, console-based hotel booking app written in **C++**. This interactive terminal app allows users to manage hotel guests, track room availability, and update bookings with ease — all presented in a clean and colorful layout.
 
