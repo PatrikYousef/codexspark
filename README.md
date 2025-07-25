@@ -1,44 +1,75 @@
-# 🏨 Royal Hotel Booking System hotel_booking_system.cpp
+# 📈 GitHub Stats Tracker (GitHub.StatsTracker.cpp)
 
-Welcome to the **Royal Hotel Booking System** — a modern, console-based hotel booking app written in **C++**. This interactive terminal app allows users to manage hotel guests, track room availability, and update bookings with ease — all presented in a clean and colorful layout.
+A sleek and user-friendly **C++ console application** that lets you **manually track** your GitHub project statistics — such as **clones, unique visitors, views, and project count** — over time. Designed to help developers stay motivated, make data-driven decisions, and glorify God through growth and excellence.
+
+---
+
+## ✨ Why Use This?
+
+> GitHub only keeps your traffic data (clones, views) for **14 days**.  
+> This tool helps you **track, analyze, and preserve** that data — forever.
 
 ---
 
 ## 🚀 Features
 
-✅ **Add New Guest**  
-📋 Input first name, last name, personal number, days staying, and choose from available rooms.
-
-🏨 **Room Map Visualization**  
-Rooms 0–99 shown with ✅ (available) and ❌ (booked), displayed in a clean grid layout.
-
-📄 **Guest List Overview**  
-View all guests with details like:
-- 👤 Name
-- 🆔 Personal Number
-- 🚪 Room Number
-- 📅 Days Staying
-- 💰 Total Cost
-
-🔍 **Search Guest by Personal Number**  
-Quick lookup by unique ID to find a specific guest.
-
-🛠️ **Edit Guest Information**  
-Accidentally added wrong data? No problem! You can edit names, personal numbers, room numbers, and duration.
-
-🧼 **Cross-platform Screen Clear**  
-Automatically clears screen on Windows (`cls`) and Linux/macOS (`clear`) for a fresh terminal experience.
+✅ **Track Core Stats:** Clones, Unique Clones, Views, and Number of Projects  
+📊 **Auto-calculates Averages:** Per-project insights for performance evaluation  
+🔢 **Unique Clone % Calculation:** Instantly see how much of your traffic is unique  
+🕓 **Timestamped Log Entries:** See when you logged each update  
+💬 **Motivational Feedback:** Based on your uniqueness rate  
+♻️ **Easy Reset Option:** Start fresh anytime  
+🔐 **Robust Input Validation:** Avoid errors and invalid entries  
+🌐 **Cross-Platform Compatibility:** Works on **Windows, macOS, and Linux**
 
 ---
 
-```text
-🏨💫═════════════════════════════════════════════════════════════════════════💫🏨
-🌟             WELCOME TO THE ROYAL HOTEL BOOKING SYSTEM                  🌟
-🏨💫═════════════════════════════════════════════════════════════════════════💫🏨
+══════════════════════════════════
+     📈 GITHUB STATS TRACKER      
+══════════════════════════════════
 
-1️⃣  ➤ 🧾 Add New Guest to the Hotel  
-2️⃣  ➤ 📋 View All Guests (Guest List)  
-3️⃣  ➤ 🔍 Search Guest by Personal Number  
-4️⃣  ➤ 🛠️ Update Guest Details  
-5️⃣  ➤ 🏨 Show Room Status Map  
-6️⃣  ➤ ❌ Exit the Booking System
+1. ➕ Add Project Stats
+2. 📊 Show Total Stats
+3. ♻️ Reset All Stats
+4. ❌ Exit
+5. 🕓 View Project Log
+══════════════════════════════════
+👉 Enter your choice (1-5):
+📋 How It Works
+
+GitHub limits traffic data visibility to 14 days. If you want to track your project’s growth long-term, this app allows you to:
+
+✅ Record stats weekly (or whenever you promote your projects)
+📈 Get averages per project for clones, views, and unique users
+🧠 Use feedback to measure project interest and promotion effectiveness
+💡 Stay motivated and consistent with a clean tracking log
+💾 Data Persistence Warning
+
+⚠️ Currently, this program does not store data permanently.
+All input is lost when you exit the program.
+Want to save your stats? You can:
+
+Add fstream support for file I/O
+Build your own save/load feature (great for beginners to learn file handling!)
+🛠️ Installation & Usage
+
+📌 Prerequisites
+A C++ compiler (e.g., g++, MSVC)
+C++11 or newer
+🔧 Compile the App
+g++ -std=c++11 -o github_stats github_stats.cpp
+▶️ Run It
+./github_stats
+💡 Pro Tips for Best Use
+
+🗓️ Log stats once a week or after key events (e.g. sharing your repo)
+📁 Use one instance per repository or add a label system
+📊 Watch how engagement grows over time — learn what works!
+⭐ Star this repo to support development and spread the word!
+🙏 Made With Purpose
+
+
+🌟 Like This Project?
+
+If this tool helps you grow or stay motivated, please give it a star ⭐.
+Every star encourages further development!
