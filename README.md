@@ -24,17 +24,6 @@ A sleek and user-friendly **C++ console application** that lets you **manually t
 
 ---
 
-══════════════════════════════════
-     📈 GITHUB STATS TRACKER      
-══════════════════════════════════
-
-1. ➕ Add Project Stats
-2. 📊 Show Total Stats
-3. ♻️ Reset All Stats
-4. ❌ Exit
-5. 🕓 View Project Log
-══════════════════════════════════
-👉 Enter your choice (1-5):
 📋 How It Works
 
 GitHub limits traffic data visibility to 14 days. If you want to track your project’s growth long-term, this app allows you to:
