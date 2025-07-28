@@ -33,73 +33,85 @@ void waitForEnter() {
 }
 
 void appendperson(vector<person>& Person) {
-    person p;
+    do {
+        person p;
 
-    cout << "\n🎖️ =========================================\n";
-    cout << "✍️       ENTER NEW PERSON INFORMATION\n";
-    cout << "🎖️ =========================================\n";
+        cout << "\n🎖️ =========================================\n";
+        cout << "✍️       ENTER NEW PERSON INFORMATION\n";
+        cout << "🎖️ =========================================\n";
 
-    cout << "\n👤 First Name       : ";
-    cin >> p.name;
+        cout << "\n👤 First Name       : ";
+        cin >> p.name;
 
-    cout << "\n👥 Last Name        : ";
-    cin >> p.lastname;
+        cout << "\n👥 Last Name        : ";
+        cin >> p.lastname;
 
-   while (true) {
-    cout << "\n🚻 Gender (M/F/Other): ";
-    cin >> p.gender;
+        while (true) {
+            cout << "\n🚻 Gender (M/F/Other): ";
+            cin >> p.gender;
 
-    if (p.gender == "M" || p.gender == "F" || p.gender == "Other") break;
-    cout << "❌ Invalid gender. Please enter M, F, or Other.\n";
-}
+            if (p.gender == "M" || p.gender == "F" || p.gender == "Other") break;
+            cout << "❌ Invalid gender. Please enter M, F, or Other.\n";
+        }
 
-    while (true) {
-        cout << "\n🆔 Person Number    : ";
-        cin >> p.personnumber;
+        while (true) {
+            cout << "\n🆔 Person Number    : ";
+            cin >> p.personnumber;
 
-        if (cin.fail()) {
-            cout << "❌ Ogiltigt personnummer, försök igen!\n";
-            cin.clear();
-            cin.ignore(numeric_limits<streamsize>::max(), '\n');
-        } else {
-            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+            if (cin.fail()) {
+                cout << "❌ Ogiltigt personnummer, försök igen!\n";
+                cin.clear();
+                cin.ignore(numeric_limits<streamsize>::max(), '\n');
+            } else {
+                cin.ignore(numeric_limits<streamsize>::max(), '\n');
+                break;
+            }
+        }
+
+        while (true) {
+            cout << "\n🎂 Age              : ";
+            cin >> p.age;
+
+            if (cin.fail()) {
+                cout << "❌ Ogiltig ålder, försök igen!\n";
+                cin.clear();
+                cin.ignore(numeric_limits<streamsize>::max(), '\n');
+            } else {
+                cin.ignore(numeric_limits<streamsize>::max(), '\n');
+                break;
+            }
+        }
+
+        while (true) {
+            cout << "\n📏 Height (in cm)   : ";
+            cin >> p.height;
+
+            if (cin.fail()) {
+                cout << "❌ Ogiltig längd, försök igen!\n";
+                cin.clear();
+                cin.ignore(numeric_limits<streamsize>::max(), '\n');
+            } else {
+                cin.ignore(numeric_limits<streamsize>::max(), '\n');
+                break;
+            }
+        }
+
+        Person.push_back(p);
+
+        cout << "\n✅ Person \"" << p.name << " " << p.lastname << "\" added successfully!\n";
+        cout << "🎖️ =========================================\n";
+
+        string choice;
+        cout << "\n➕ Do you want to add another person? (Y/N): ";
+        cin >> choice;
+
+        if (choice != "Y" && choice != "y") {
+            cout << "\n👋 Returning to menu...\n";
+            waitForEnter();
             break;
         }
-    }
 
-    while (true) {
-        cout << "\n🎂 Age              : ";
-        cin >> p.age;
-
-        if (cin.fail()) {
-            cout << "❌ Ogiltig ålder, försök igen!\n";
-            cin.clear();
-            cin.ignore(numeric_limits<streamsize>::max(), '\n');
-        } else {
-            cin.ignore(numeric_limits<streamsize>::max(), '\n');
-            break;
-        }
-    }
-
-    while (true) {
-        cout << "\n📏 Height (in cm)   : ";
-        cin >> p.height;
-
-        if (cin.fail()) {
-            cout << "❌ Ogiltig längd, försök igen!\n";
-            cin.clear();
-            cin.ignore(numeric_limits<streamsize>::max(), '\n');
-        } else {
-            cin.ignore(numeric_limits<streamsize>::max(), '\n');
-            break;
-        }
-    }
-
-    Person.push_back(p);
-
-    cout << "\n✅ Person \"" << p.name << " " << p.lastname << "\" added successfully!\n";
-    cout << "🎖️ =========================================\n";
-    waitForEnter();
+    } while (true);
 }
 
 void ShowAppendPersons(const vector<person>& Person) {
@@ -140,6 +152,7 @@ void ChangeSomethingYouAccidentallyAdded(vector<person>& Person) {
 
     cout << "\n🔍 Enter the 🆔 Personnumber of the person to update: ";
     cin >> personnumber;
+    cin.ignore(numeric_limits<streamsize>::max(), '\n'); // clear newline
 
     for (auto& p : Person) {
         if (p.personnumber == personnumber) {
@@ -147,73 +160,79 @@ void ChangeSomethingYouAccidentallyAdded(vector<person>& Person) {
 
             cout << "\n✅ Person found: " << p.name << " " << p.lastname << "\n";
 
-            cout << "\n🪖 ===============================================\n";
-            cout << "     WAR ENROLLMENT CHECKLIST 📋\n";
-            cout << "🪖 ===============================================\n";
-
-            cout << left << setw(12) << "👤Name"
-                 << setw(12) << "👥Lastname"
-                 << setw(6)  << "  🎂Age "
-                 << setw(10) << " 🚻Gender "
-                 << setw(10) << " 📏Height " << endl;
-
-            cout << left << setw(12) << p.name
-                 << setw(12) << p.lastname
-                 << setw(6)  << p.age
-                 << setw(10) << p.gender
-                 << setw(10) << fixed << setprecision(1) << p.height;
-
-            cout << "\n🪖 ===============================================\n";
-
-            cout << "\n📋✨ What would you like to change? ✨📋\n";
-            cout << "🌟===========================================🌟\n";
-            cout << "\n1.  📝 Change Name\n";
-            cout << "\n2.  🗂️ Change Lastname\n";
-            cout << "\n3.  🚻 Change Gender\n";
-            cout << "\n4.  🎂 Change Age\n";
-            cout << "\n5.  📏 Change Height\n";
-            cout << "🌟===========================================🌟\n";
-            cout << "➡️  Enter your choice (1-5): ";
-
             int choice;
-            cin >> choice;
+            do {
+                clearScreen();
+                cout << "\n🪖 ===============================================\n";
+                cout << "     WAR ENROLLMENT CHECKLIST 📋\n";
+                cout << "🪖 ===============================================\n";
 
-            switch (choice) {
-                case 1:
-                    clearScreen();
-                    cout << "📝 New Name: ";
-                    cin >> p.name;
-                    break;
-                case 2:
-                    clearScreen();
-                    cout << "📝 New Lastname: ";
-                    cin >> p.lastname;
-                    break;
-                case 3:
-                    clearScreen();
-                    cout << "📝 New Gender: ";
-                    cin >> p.gender;
-                    break;
-                case 4:
-                    clearScreen();
-                    cout << "📝 New Age: ";
-                    cin >> p.age;
-                    break;
-                case 5:
-                    clearScreen();
-                    cout << "📝 New Height (cm): ";
-                    cin >> p.height;
-                    break;
-                default:
-                    cout << "❌ Invalid choice.\n";
-                    cin.clear();
-                    cin.ignore(numeric_limits<streamsize>::max(), '\n');
-                    return;
-            }
+                cout << left << setw(12) << "👤Name"
+                     << setw(12) << "👥Lastname"
+                     << setw(6)  << "  🎂Age "
+                     << setw(10) << " 🚻Gender "
+                     << setw(10) << " 📏Height " << endl;
 
-            cout << "\n✅ Update completed successfully!\n";
-            waitForEnter();
-            return;
+                cout << left << setw(12) << p.name
+                     << setw(12) << p.lastname
+                     << setw(6)  << p.age
+                     << setw(10) << p.gender
+                     << setw(10) << fixed << setprecision(1) << p.height;
+
+                cout << "\n🪖 ===============================================\n";
+
+                cout << "\n📋✨ What would you like to change? ✨📋\n";
+                cout << "🌟===========================================🌟\n";
+                cout << "\n0.  🔚 Exit\n";
+                cout << "\n1.  📝 Change Name\n";
+                cout << "\n2.  🗂️ Change Lastname\n";
+                cout << "\n3.  🚻 Change Gender\n";
+                cout << "\n4.  🎂 Change Age\n";
+                cout << "\n5.  📏 Change Height\n";
+                cout << "🌟===========================================🌟\n";
+                cout << "➡️  Enter your choice (0-5): ";
+
+                cin >> choice;
+                cin.ignore(numeric_limits<streamsize>::max(), '\n'); // clear newline
+
+                switch (choice) {
+                    case 0:
+                        cout << "\n🔙 Exiting update menu.\n";
+                        waitForEnter();
+                        return;
+                    case 1:
+                        cout << "📝 New Name: ";
+                        getline(cin, p.name);
+                        break;
+                    case 2:
+                        cout << "📝 New Lastname: ";
+                        getline(cin, p.lastname);
+                        break;
+                    case 3:
+                        cout << "📝 New Gender (M/F/Other): ";
+                        getline(cin, p.gender);
+                        break;
+                    case 4:
+                        cout << "📝 New Age: ";
+                        cin >> p.age;
+                        cin.ignore(numeric_limits<streamsize>::max(), '\n');
+                        break;
+                    case 5:
+                        cout << "📝 New Height (cm): ";
+                        cin >> p.height;
+                        cin.ignore(numeric_limits<streamsize>::max(), '\n');
+                        break;
+                    default:
+                        cout << "❌ Invalid choice, please enter a number between 0 and 5.\n";
+                        waitForEnter();
+                        break;
+                }
+
+                if (choice >= 1 && choice <= 5) {
+                    cout << "\n✅ Update completed successfully!\n";
+                    waitForEnter();
+                }
+            } while (true);
         }
     }
 
@@ -227,6 +246,7 @@ void RemovePerson(vector<person>& PersonList) {
     long long int targetPersonNumber;
     cout << "\n🗑️ ✍️  Enter the 🆔 Personnumber of the person to remove: ";
     cin >> targetPersonNumber;
+    cin.ignore(numeric_limits<streamsize>::max(), '\n');
 
     bool found = false;
 
@@ -234,7 +254,12 @@ void RemovePerson(vector<person>& PersonList) {
         if (it->personnumber == targetPersonNumber) {
             cout << "⚠️  Are you sure you want to remove " << it->name << " " << it->lastname << "? (y/n): ";
             char confirm;
-            cin >> confirm;
+            while (true) {
+                cin >> confirm;
+                cin.ignore(numeric_limits<streamsize>::max(), '\n');
+                if (confirm == 'y' || confirm == 'Y' || confirm == 'n' || confirm == 'N') break;
+                cout << "❌ Invalid input. Please enter 'y' or 'n': ";
+            }
 
             if (confirm == 'y' || confirm == 'Y') {
                 PersonList.erase(it);
@@ -265,7 +290,7 @@ void showMainMenu() {
     cout << "\n4.  🗑️ Remove a Person\n";
     cout << "\n5.  ❌ Exit\n";
     cout << "\n🌟===========================================🌟\n";
-    cout << "👉 Enter your choice (0-4): ";
+    cout << "👉 Enter your choice (1-5): ";
 }
 
 int main() {
@@ -276,6 +301,7 @@ int main() {
         clearScreen();
         showMainMenu();
         cin >> choice;
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
 
         switch (choice) {
             case 1:
@@ -300,9 +326,9 @@ int main() {
                 return 0;
             default:
                 cout << "❗ Invalid choice. Please try again.\n";
-                      cin.clear();
-            cin.ignore(numeric_limits<streamsize>::max(), '\n');
-
+                cin.clear();
+                cin.ignore(numeric_limits<streamsize>::max(), '\n');
+                waitForEnter();
         }
     }
 
