@@ -2,6 +2,7 @@
 #include <vector>
 #include <algorithm>
 #include <iomanip>
+#include <limits>
 
 using namespace std;
 
@@ -12,210 +13,500 @@ using namespace std;
     #define CLEAR_COMMAND "clear"
 #endif
 
-// Class representing a user's financial data
 class Payment {
 public:
-    string firstName;         // First name
-    string lastName;          // Last name
-    long long int income;     // Income
-    long long int bills;      // Bills
-    long long int food;       // Food expenses
-    long long int clothes;    // Clothing expenses
+    string firstName;
+    string lastName;
+    long long int income;
+    long long int bills;
+    long long int food;
+    long long int clothes;
 };
 
-// Function to clear the console screen
 void clearScreen() {
     system(CLEAR_COMMAND);
 }
-
-// Function to add a new user with beautiful layout and emojis
-void addUser(vector<Payment>& users) {
-    Payment user;
-    string input;
-
-    cout << "\n📝 ──────────────── Add a New User ──────────────── 📝\n";
-
-    // Get first name
-    cout << "👤 First name: ";
-    getline(cin, user.firstName);
-
-    // Get last name
-    cout << "👥 Last name: ";
-    getline(cin, user.lastName);
-
-    // Get income
-    cout << "💵 Monthly income (numbers only): ";
-    getline(cin, input);
-    user.income = stoll(input);
-
-    // Get monthly bills
-    cout << "📄 Monthly bills: ";
-    getline(cin, input);
-    user.bills = stoll(input);
-
-    // Get monthly food expenses
-    cout << "🍽️ Monthly food expenses: ";
-    getline(cin, input);
-    user.food = stoll(input);
-
-    // Get monthly clothing expenses
-    cout << "👗 Monthly clothing expenses: ";
-    getline(cin, input);
-    user.clothes = stoll(input);
-
-    // Add user to the vector
-    users.push_back(user);
-
-    cout << "\n✅ User \"" << user.firstName << " " << user.lastName << "\" has been added successfully!\n";
-    cout << "🎉 Great job staying on top of your finances!\n";
-    cout << "------------------------------------------------------\n";
-}
-
-// Function to display all users with clean straight layout
-void showUsers(const vector<Payment>& users) {
+void findUsers(const vector<Payment>& users) {
     if (users.empty()) {
-        cout << "\n📭 No users to display. Add some to get started!\n";
+        clearScreen();
+        cout << "\n📭 No users available to search.\n";
+        cout << "\n🔁 Press Enter to return...";
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
         return;
     }
 
-    cout << "\n📋 ======== USER LIST ======== 📋\n\n";
+    do {
+        clearScreen();
+        cout << "\n🔍 ➤ Find Users\n";
+        cout << "━━━━━━━━━━━━━━━━━\n";
+        cout << "Enter name to search (or type 'exit' to return): ";
+        string searchName;
+        getline(cin, searchName);
 
-    // Print clean table headers
-    cout << left
-         << setw(5)  << "No."
-         << setw(16) << "First Name"
-         << setw(16) << "Last Name"
-         << setw(14) << "Income"
-         << setw(14) << "Bills"
-         << setw(14) << "Food"
-         << setw(14) << "Clothes" << "\n";
+        if (searchName == "exit" || searchName == "Exit") break;
 
-    cout << string(93, '-') << "\n";
+        bool found = false;
+        int index = 1;
 
-    int index = 1;
-    for (const auto& user : users) {
-        cout << left
-             << setw(5)  << index++
-             << setw(16) << user.firstName
-             << setw(16) << user.lastName
-             << setw(14) << user.income
-             << setw(14) << user.bills
-             << setw(14) << user.food
-             << setw(14) << user.clothes << "\n";
-    }
+        for (const auto& user : users) {
+            if (user.firstName.find(searchName) != string::npos ||
+                user.lastName.find(searchName) != string::npos) {
+                if (!found) {
+                    cout << "\n📋 Matching Users:\n";
+                    cout << left << setw(3) << "#"
+                         << setw(15) << "First Name"
+                         << setw(15) << "Last Name"
+                         << setw(12) << "Income"
+                         << setw(12) << "Bills"
+                         << setw(12) << "Food"
+                         << setw(12) << "Clothes" << "\n";
+                    cout << string(84, '-') << "\n";
+                }
 
-    cout << string(93, '=') << "\n";
-    cout << "📦 Total users in system: " << users.size() << "\n";
+                cout << left << setw(3) << index++
+                     << setw(15) << user.firstName
+                     << setw(15) << user.lastName
+                     << setw(12) << user.income
+                     << setw(12) << user.bills
+                     << setw(12) << user.food
+                     << setw(12) << user.clothes << "\n";
+
+                found = true;
+            }
+        }
+
+        if (!found) {
+            cout << "\n❌ No users match \"" << searchName << "\".\n";
+        }
+
+        cout << "\n🔁 Search again? (y/n): ";
+        char cont;
+        cin >> cont;
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
+
+        if (cont != 'y' && cont != 'Y') break;
+
+    } while (true);
 }
 
-// Function to calculate savings for a user by first name
+void modifyUser(vector<Payment>& users) {
+    if (users.empty()) {
+        clearScreen();
+        cout << "\n📭 No users available to modify.\n";
+        cout << "\n🔁 Press Enter to return...";
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
+        return;
+    }
+
+    do {
+        clearScreen();
+        cout << "\n✏️ ➤ Modify User Data\n";
+        cout << "━━━━━━━━━━━━━━━━━━━━━━━\n";
+        cout << "🔍 Enter First Name of user to modify (or type 'exit' to return): ";
+        string nameToModify;
+        getline(cin, nameToModify);
+
+        if (nameToModify == "exit" || nameToModify == "Exit") break;
+
+        bool found = false;
+
+        for (auto &user : users) {
+            if (user.firstName == nameToModify) {
+                found = true;
+                cout << "\n👤 Modifying: " << user.firstName << " " << user.lastName << "\n";
+
+                string input;
+
+                // First name
+                cout << "New First Name (leave empty to keep \"" << user.firstName << "\"): ";
+                getline(cin, input);
+                if (!input.empty()) user.firstName = input;
+
+                // Last name
+                cout << "New Last Name (leave empty to keep \"" << user.lastName << "\"): ";
+                getline(cin, input);
+                if (!input.empty()) user.lastName = input;
+
+                // Income
+                cout << "New Income (leave empty to keep " << user.income << "): ";
+                getline(cin, input);
+                if (!input.empty()) {
+                    try {
+                        long long val = stoll(input);
+                        if (val >= 0) user.income = val;
+                    } catch (...) {
+                        cout << "❌ Invalid input. Keeping old income.\n";
+                    }
+                }
+
+                // Bills
+                cout << "New Bills (leave empty to keep " << user.bills << "): ";
+                getline(cin, input);
+                if (!input.empty()) {
+                    try {
+                        long long val = stoll(input);
+                        if (val >= 0) user.bills = val;
+                    } catch (...) {
+                        cout << "❌ Invalid input. Keeping old bills.\n";
+                    }
+                }
+
+                // Food
+                cout << "New Food Expenses (leave empty to keep " << user.food << "): ";
+                getline(cin, input);
+                if (!input.empty()) {
+                    try {
+                        long long val = stoll(input);
+                        if (val >= 0) user.food = val;
+                    } catch (...) {
+                        cout << "❌ Invalid input. Keeping old food expenses.\n";
+                    }
+                }
+
+                // Clothes
+                cout << "New Clothes Expenses (leave empty to keep " << user.clothes << "): ";
+                getline(cin, input);
+                if (!input.empty()) {
+                    try {
+                        long long val = stoll(input);
+                        if (val >= 0) user.clothes = val;
+                    } catch (...) {
+                        cout << "❌ Invalid input. Keeping old clothes expenses.\n";
+                    }
+                }
+
+                cout << "\n✅ User updated successfully!\n";
+                break;
+            }
+        }
+
+        if (!found) {
+            cout << "❌ No user found with that first name.\n";
+        }
+
+        cout << "\n➕ Modify another user? (y/n): ";
+        char cont;
+        cin >> cont;
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
+
+        if (cont != 'y' && cont != 'Y') break;
+
+    } while (true);
+}
+
+
+void showMenu() {
+    cout << "\n🌟═══════════════════════════════════════🌟\n";
+    cout << "       💸 Saving Money for Stuff 💼\n";
+    cout << "🌟═══════════════════════════════════════🌟\n";
+    cout << "\n1️⃣  ➤ Add a New User 👤\n";
+    cout << "\n2️⃣  ➤ Show All Users 📋\n";
+    cout << "\n3️⃣  ➤ Calculate Savings 💰\n";
+    cout << "\n4️⃣  ➤ Remove a User 🗑️\n";
+    cout << "\n5️⃣  ➤ Modify a User ✏️\n";
+    cout << "\n6️⃣  ➤ Find Users 🔍\n";
+    cout << "\n7️⃣  ➤ Exit Program 🚪\n";
+    cout << "-----------------------------------------\n";
+    cout << "👉 Enter your choice (1–7): ";
+}
+
+
+void addUser(vector<Payment>& users) {
+    do {
+        clearScreen();
+        Payment user;
+        string input;
+
+        cout << "\n🆕 ➤ Add a New User\n";
+        cout << "━━━━━━━━━━━━━━━━━━━━━━\n";
+
+        // Validate First Name
+        do {
+            cout << "👤 First Name: ";
+            getline(cin, user.firstName);
+            if (user.firstName.empty()) {
+                cout << "❌ Error: First name cannot be empty!\n";
+            }
+        } while (user.firstName.empty());
+
+        // Validate Last Name
+        do {
+            cout << "👤 Last Name: ";
+            getline(cin, user.lastName);
+            if (user.lastName.empty()) {
+                cout << "❌ Error: Last name cannot be empty!\n";
+            }
+        } while (user.lastName.empty());
+
+        // Income (must be numeric & >= 0)
+        while (true) {
+            cout << "💵 Income (numbers only): ";
+            getline(cin, input);
+            try {
+                user.income = stoll(input);
+                if (user.income < 0) {
+                    cout << "❌ Error: Income cannot be negative!\n";
+                    continue;
+                }
+                break;
+            } catch (...) {
+                cout << "❌ Error: Please enter a valid number!\n";
+            }
+        }
+
+        // Bills
+        while (true) {
+            cout << "🏠 Monthly Bills: ";
+            getline(cin, input);
+            try {
+                user.bills = stoll(input);
+                if (user.bills < 0) {
+                    cout << "❌ Error: Bills cannot be negative!\n";
+                    continue;
+                }
+                break;
+            } catch (...) {
+                cout << "❌ Error: Please enter a valid number!\n";
+            }
+        }
+
+        // Food
+        while (true) {
+            cout << "🍽️ Monthly Food Expenses: ";
+            getline(cin, input);
+            try {
+                user.food = stoll(input);
+                if (user.food < 0) {
+                    cout << "❌ Error: Food expenses cannot be negative!\n";
+                    continue;
+                }
+                break;
+            } catch (...) {
+                cout << "❌ Error: Please enter a valid number!\n";
+            }
+        }
+
+        // Clothes
+        while (true) {
+            cout << "👗 Monthly Clothing Expenses: ";
+            getline(cin, input);
+            try {
+                user.clothes = stoll(input);
+                if (user.clothes < 0) {
+                    cout << "❌ Error: Clothing expenses cannot be negative!\n";
+                    continue;
+                }
+                break;
+            } catch (...) {
+                cout << "❌ Error: Please enter a valid number!\n";
+            }
+        }
+
+        // Add user
+        users.push_back(user);
+        cout << "\n✅ User \"" << user.firstName << " " << user.lastName << "\" added successfully!\n";
+
+        cout << "\n➕ Add another user? (y/n): ";
+        char cont;
+        cin >> cont;
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
+
+        if (cont != 'y' && cont != 'Y') break;
+
+    } while (true);
+}
+
+
+void showUsers(const vector<Payment>& users) {
+    do {
+        clearScreen();
+
+        if (users.empty()) {
+            cout << "\n📭 No users to display.\n";
+        } else {
+            cout << "\n📋 ➤ Registered Users\n";
+            cout << "═══════════════════════════════════════════════════════════════════════════════\n";
+
+            cout << left << setw(3) << "#"
+                 << setw(15) << "First Name"
+                 << setw(15) << "Last Name"
+                 << setw(12) << "Income"
+                 << setw(12) << "Bills"
+                 << setw(12) << "Food"
+                 << setw(12) << "Clothes" << "\n";
+
+            cout << string(84, '-') << "\n";
+
+            int index = 1;
+            for (const auto& user : users) {
+                cout << left << setw(3) << index++
+                     << setw(15) << user.firstName
+                     << setw(15) << user.lastName
+                     << setw(12) << user.income
+                     << setw(12) << user.bills
+                     << setw(12) << user.food
+                     << setw(12) << user.clothes << "\n";
+            }
+
+            cout << string(84, '=') << "\n";
+            cout << "👥 Total Users: " << users.size() << "\n";
+        }
+
+        cout << "\n🔄 Refresh list? (y/n): ";
+        char cont;
+        cin >> cont;
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
+
+        if (cont != 'y' && cont != 'Y') break;
+
+    } while (true);
+}
+
 void calculateSavings(const vector<Payment>& users) {
-    string nameToFind;
-    cout << "\n--- Calculate Savings ---\n";
-    cout << "Enter the first name of the user: ";
-    getline(cin, nameToFind);
+    do {
+        clearScreen();
 
-    bool found = false;
+        cout << "\n💰 ➤ Calculate Savings\n";
+        cout << "━━━━━━━━━━━━━━━━━━━━━━━━━\n";
+        cout << "🔍 Enter First Name (or type 'exit' to return): ";
+        string nameToFind;
+        getline(cin, nameToFind);
 
-    // Search for user
-    for (const auto& user : users) {
-        if (user.firstName == nameToFind) {
-            // Calculate savings: income minus all expenses
-            long long int savings = user.income - user.bills - user.food - user.clothes;
-            cout << "💰 Estimated savings for " << user.firstName << " " << user.lastName << ": " << savings << " money units\n";
-            found = true;
+        if (nameToFind == "exit" || nameToFind == "Exit") {
             break;
         }
-    }
 
-    if (!found) {
-        cout << "❌ User not found. Please check the name.\n";
-    }
+        bool found = false;
+        for (const auto& user : users) {
+            if (user.firstName == nameToFind) {
+                long long int savings = user.income - user.bills - user.food - user.clothes;
+                cout << "\n💸 " << user.firstName << " " << user.lastName
+                     << "'s Estimated Monthly Savings: " << savings << " 💵\n";
+                found = true;
+                break;
+            }
+        }
+
+        if (!found) {
+            cout << "❌ User not found. Please check the spelling.\n";
+        }
+
+        cout << "\n🔁 Calculate for another user? (y/n): ";
+        char cont;
+        cin >> cont;
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
+
+        if (cont != 'y' && cont != 'Y') break;
+
+    } while (true);
 }
 
-// Function to remove a user by first name
 void removeUser(vector<Payment>& users) {
-    string nameToRemove;
-    cout << "\n--- Remove a User ---\n";
-    cout << "Enter the first name of the user you want to remove: ";
-    getline(cin, nameToRemove);
-
-    // Use remove_if to "remove" user(s) with matching first name
-    auto it = remove_if(users.begin(), users.end(), [&](const Payment& user) {
-        return user.firstName == nameToRemove;
-    });
-
-    // If any user was found, erase from the vector
-    if (it != users.end()) {
-        users.erase(it, users.end());
-        cout << "🗑️ User \"" << nameToRemove << "\" has been removed.\n";
-    } else {
-        cout << "❌ No user found with that name.\n";
+    if (users.empty()) {
+        clearScreen();
+        cout << "\n📭 No users available to remove.\n";
+        cout << "\n🔁 Press Enter to return...";
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
+        return;
     }
-}
 
-// Function to display the main menu with emojis and beautiful layout
-void showMenu() {
-    cout << "\n";
-    cout << "🌟══════════════════════════════════════🌟\n";
-    cout << "        💸  PERSONAL FINANCE APP  💸     \n";
-    cout << "🌟══════════════════════════════════════🌟\n";
-    cout << "\n📌  1️⃣  ➤ Add a new user\n";
-    cout << "\n📋  2️⃣  ➤ Show all users\n";
-    cout << "\n💰  3️⃣  ➤ Calculate savings\n";
-    cout << "\n❌  4️⃣  ➤ Remove a user\n";
-    cout << "\n🚪  5️⃣  ➤ Exit the program\n";
-    cout << "\n🌟══════════════════════════════════════🌟\n";
-    cout << "👉 Please enter your choice (1-5): ";
-}
+    do {
+        clearScreen();
 
+        cout << "\n🗑️ ➤ Remove a User\n";
+        cout << "━━━━━━━━━━━━━━━━━━━━━\n";
+
+        cout << "🔍 Enter **First Name** to remove (or type 'exit' to return): ";
+        string nameToRemove;
+        getline(cin, nameToRemove);
+
+        if (nameToRemove.empty()) {
+            cout << "❌ Error: Name cannot be empty!\n";
+            cout << "🔁 Press Enter to try again...";
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+            continue;
+        }
+
+        if (nameToRemove == "exit" || nameToRemove == "Exit") {
+            break;
+        }
+
+        // Check if user exists
+        auto it = remove_if(users.begin(), users.end(), [&](const Payment& user) {
+            return user.firstName == nameToRemove;
+        });
+
+        if (it != users.end()) {
+            users.erase(it, users.end());
+            cout << "\n✅ User \"" << nameToRemove << "\" has been removed.\n";
+        } else {
+            cout << "❌ No user found with that first name.\n";
+        }
+
+        cout << "\n➕ Remove another user? (y/n): ";
+        char cont;
+        cin >> cont;
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
+
+        if (cont != 'y' && cont != 'Y') break;
+
+    } while (true);
+}
 
 int main() {
-    vector<Payment> users;   // Vector to store users
+    vector<Payment> users;
     string input;
     int choice;
 
     do {
-        clearScreen();  // Clear screen before showing menu
-        showMenu();     // Show menu
+        clearScreen();
+        showMenu();
         getline(cin, input);
 
         try {
-            choice = stoi(input);  // Convert input to integer
+            choice = stoi(input);
         } catch (...) {
-            choice = -1;           // Handle invalid input
+            choice = -1;
         }
 
-        clearScreen();  // Clear screen after input
+        clearScreen();
 
         switch (choice) {
             case 1:
-                addUser(users);       // Add user
+                addUser(users);
                 break;
             case 2:
-                showUsers(users);     // Show all users
+                showUsers(users);
                 break;
             case 3:
-                calculateSavings(users);  // Calculate savings
+                calculateSavings(users);
                 break;
             case 4:
-                removeUser(users);    // Remove user
+                removeUser(users);
                 break;
             case 5:
-                cout << "👋 Exiting the program. Goodbye!\n";
+                modifyUser(users);
+                break;
+            case 6:
+                findUsers(users);
+                break;
+            case 7:
+                cout << "\n👋 Thank you for using Personal Finance Manager!\n";
+                cout << "🙏 Stay financially blessed! 💖\n";
                 break;
             default:
-                cout << "❗ Invalid input. Please enter a number between 1 and 5.\n";
+                cout << "\n❗ Invalid input. Please enter a number between 1 and 7.\n";
+                cout << "\n🔁 Press Enter to return to the main menu...";
+                cin.ignore(numeric_limits<streamsize>::max(), '\n');
                 break;
         }
 
-        // Wait for Enter key press to continue if not exiting
-        if (choice != 5) {
-            cout << "\nPress Enter to continue...";
+        if (choice != 7) {
+            cout << "\n🔁 Press Enter to return to the main menu...";
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
         }
 
-    } while (choice != 5);  // Loop until exit option selected
+    } while (choice != 7);
 
     return 0;
 }
