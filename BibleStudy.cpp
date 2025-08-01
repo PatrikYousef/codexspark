@@ -233,7 +233,7 @@ void visaSlumpadVers() {
     };
     srand(static_cast<unsigned int>(time(nullptr)));
     int index = rand() % verser.size();
-    cout << verser[index] << "\n\n";
+    cout << verser[index] << "\n";
 
 }
 void godsayingyes() {
@@ -298,7 +298,31 @@ void godsayingyes() {
 
         { "📖 Mark 11:24", 
           "\"Whatever you ask for in prayer, believe that you have received it,\n"
-          "and it will be yours.\"" }
+          "and it will be yours.\"" },
+
+        { "📖 Jeremiah 33:3",
+          "\"Call to me and I will answer you and tell you great and unsearchable things you do not know.\"" },
+
+        { "📖 Psalm 145:18–19",
+          "\"The Lord is near to all who call on him... He fulfills the desires of those who fear him; he hears their cry and saves them.\"" },
+
+        { "📖 James 5:16",
+          "\"The prayer of a righteous person is powerful and effective.\"" },
+
+        { "📖 1 Kings 8:56",
+          "\"Not one word has failed of all the good promises he gave...\"" },
+
+        { "📖 Isaiah 65:24",
+          "\"Before they call I will answer; while they are still speaking I will hear.\"" },
+
+        { "📖 Luke 11:9–10",
+          "\"Ask and it will be given to you; seek and you will find...\"" },
+
+        { "📖 Psalm 34:17",
+          "\"The righteous cry out, and the Lord hears them; he delivers them from all their troubles.\"" },
+
+        { "📖 2 Chronicles 7:14",
+          "\"If my people... will humble themselves and pray... then I will hear from heaven...\"" }
     };
 
     for (const auto& verse : verses) {
@@ -311,15 +335,21 @@ void godsayingyes() {
 
     vector<string> signs = {
         "\n✅ Doors open naturally — with peace, not pressure.",
-    "\n✅ You feel inner confirmation through Scripture and prayer.",
-    "\n✅ Wise, godly counsel affirms your direction.",
-    "\n✅ The answer aligns with God's character and His Word.",
-    "\n✅ You experience deep peace even when the outcome is uncertain.",
-    "\n✅ God confirms the direction through repeated messages, verses, or themes.",
-    "\n✅ Resources, opportunities, or support come at just the right time.",
-    "\n✅ A sense of joy, boldness, or excitement accompanies your decision.",
-    "\n✅ Your step of faith produces good fruit or blesses others.",
-    "\n✅ The Holy Spirit gives you clarity, courage, or peace after praying."
+        "\n✅ You feel inner confirmation through Scripture and prayer.",
+        "\n✅ Wise, godly counsel affirms your direction.",
+        "\n✅ The answer aligns with God's character and His Word.",
+        "\n✅ You experience deep peace even when the outcome is uncertain.",
+        "\n✅ God confirms the direction through repeated messages, verses, or themes.",
+        "\n✅ Resources, opportunities, or support come at just the right time.",
+        "\n✅ A sense of joy, boldness, or excitement accompanies your decision.",
+        "\n✅ Your step of faith produces good fruit or blesses others.",
+        "\n✅ The Holy Spirit gives you clarity, courage, or peace after praying.",
+        "\n✅ Your heart remains humble and teachable through the process.",
+        "\n✅ A godly door opens that you couldn’t force yourself.",
+        "\n✅ There’s confirmation from unexpected people or events.",
+        "\n✅ It aligns with what you’ve been sensing for a long time.",
+        "\n✅ The outcome glorifies God and helps others know Him.",
+        "\n✅ Peace grows deeper as you continue walking in faith."
     };
 
     cout << "💡 Practical Signs God Might Be Saying YES:\n";
@@ -331,6 +361,7 @@ void godsayingyes() {
     cout << "  📌 God’s YES is a blessing.\n";
     waitForEnter();
 }
+
 void godsayingno() {
     cout << "\n🌧️==============================================🌧️\n";
     cout << "     🙏 Signs God Is Saying NO to Your Prayer\n";
@@ -396,7 +427,31 @@ void godsayingno() {
           "\"In their hearts humans plan their course, but the Lord establishes their steps.\"" },
 
         { "📖 Revelation 3:7", 
-          "\"What he opens no one can shut, and what he shuts no one can open.\"" }
+          "\"What he opens no one can shut, and what he shuts no one can open.\"" },
+
+        { "📖 Micah 3:4", 
+          "\"Then they will cry out to the Lord, but he will not answer them...\"" },
+
+        { "📖 Ezekiel 14:3", 
+          "\"These men have set up idols in their hearts... Should I let them inquire of me at all?\"" },
+
+        { "📖 James 1:6–7", 
+          "\"But when you ask, you must believe and not doubt... Such a person should not expect to receive anything from the Lord.\"" },
+
+        { "📖 Hosea 4:6", 
+          "\"My people are destroyed for lack of knowledge...\"" },
+
+        { "📖 Malachi 2:13–14", 
+          "\"You flood the Lord’s altar with tears... He no longer looks with favor on your offerings...\"" },
+
+        { "📖 Psalm 66:18", 
+          "\"If I had cherished sin in my heart, the Lord would not have listened.\"" },
+
+        { "📖 Lamentations 3:8", 
+          "\"Even when I call out or cry for help, he shuts out my prayer.\"" },
+
+        { "📖 Deuteronomy 1:45", 
+          "\"You returned and wept before the Lord, but he would not listen to your voice...\"" }
     };
 
     for (const auto& verse : verses) {
@@ -407,7 +462,7 @@ void godsayingno() {
         waitForEnter();
     }
 
-        vector<string> signsGodIsSayingNo = {
+    vector<string> signsGodIsSayingNo = {
         "\n❌ You feel a lack of peace despite continued prayer.",
         "\n❌ Doors keep closing no matter how hard you try to open them.",
         "\n❌ Godly counsel advises against the direction you're pursuing.",
@@ -420,7 +475,13 @@ void godsayingno() {
         "\n❌ You feel spiritual dryness when praying about the situation.",
         "\n❌ It would harm your spiritual growth or others around you.",
         "\n❌ God is protecting you from something you don’t see yet.",
-        "\n❌ There is no peace even after fasting and praying sincerely."
+        "\n❌ There is no peace even after fasting and praying sincerely.",
+        "\n❌ Your spiritual life is being neglected while chasing the request.",
+        "\n❌ You feel uneasy even after receiving what you asked for.",
+        "\n❌ The situation creates distance between you and God.",
+        "\n❌ There's no joy or fruit after taking steps toward it.",
+        "\n❌ God repeatedly reminds you of surrender, not striving.",
+        "\n❌ The pursuit of your prayer request leads to compromise."
     };
 
     cout << "📜 Possible Signs God May Be Saying NO:\n";
@@ -428,9 +489,8 @@ void godsayingno() {
     for (const auto& sign : signsGodIsSayingNo) {
         cout << sign << endl;
     }
-    cout << endl;
 
-    cout << "🌧️==============================================🌧️\n";
+    cout << "\n🌧️==============================================🌧️\n";
     cout << "🕊️ Even when God says NO, it may be His greatest mercy.\n";
     cout << "🙏 Trust that His plan is higher and His timing is perfect.\n";
     cout << "✨ Remember:\n";
@@ -649,13 +709,13 @@ int main() {
             case 1:
                 cout << "║ ✍️  Add a Sin Entry                                 ║\n";
                 cout << "╚══════════════════════════════════════════════════════╝\n\n";
-                 clearScreen();
+                clearScreen();
                 addSin(sins);
                 break;
             case 2:
                 cout << "║ 🙇‍♂️  Confess Sins and Receive Forgiveness         ║\n";
                 cout << "╚══════════════════════════════════════════════════════╝\n\n";
-                  clearScreen();
+                clearScreen();
                 showforgivenessfromgod();
                 showSins(sins);
              
@@ -663,7 +723,7 @@ int main() {
             case 3:
                 cout << "║ 🌟  Add a Good Deed                                 ║\n";
                 cout << "╚══════════════════════════════════════════════════════╝\n\n";
-                  clearScreen();
+                clearScreen();
                 goodthing(goodthings);
                 break;
             case 4:
