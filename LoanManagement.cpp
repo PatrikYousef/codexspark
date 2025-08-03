@@ -31,52 +31,53 @@ void clearScreen() {
 void printLine(char ch, int length) {
     cout << string(length, ch) << "\n";
 }
-void felsöka(){
-     cin.clear();
+
+void felsöka() {
+    cin.clear();
     cin.ignore(numeric_limits<streamsize>::max(), '\n');
 }
 
 void waitForEnter() {
-    cout << "Press Enter to continue...";
-    cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // discard leftover input
-    cin.get(); // wait for actual Enter press
+    cout << "\n\n🔁 Press Enter to return to the menu...";
+    cin.ignore(numeric_limits<streamsize>::max(), '\n');
+    cin.get();
 }
-
 
 void appendPerson(vector<Loan>& people) {
     do {
+        clearScreen();
         Loan l;
 
-        printLine('=', 50);
-        cout << "📋 Register a New Loan\n";
-        printLine('=', 50);
+        printLine('=', 70);
+        cout << setw(50) << "📋 Register a New Loan 📋" << "\n";
+        printLine('=', 70);
+        cout << "\n";
 
-        cout << "👤 First Name        : ";
+        cout << "👤 First Name               : ";
         cin >> l.name;
 
-        cout << "👤 Last Name         : ";
+        cout << "👤 Last Name                : ";
         cin >> l.lastname;
 
-        cout << "🆔 Personal Number   : ";
+        cout << "🆔 Personal Number          : ";
         cin >> l.personnumber;
 
-        cout << "💵 Loan Amount (kr)  : ";
+        cout << "💵 Loan Amount (kr)         : ";
         while (!(cin >> l.loanAmount) || l.loanAmount <= 0) {
-            cout << "⚠️ Please enter a valid positive loan amount: ";
+            cout << "⚠️  Please enter a valid positive loan amount: ";
             felsöka();
         }
 
-        cout << "📈 Interest Rate (%) : ";
+        cout << "📈 Interest Rate (%)        : ";
         while (!(cin >> l.interestRate) || l.interestRate < 0) {
-            cout << "⚠️ Please enter a valid non-negative interest rate: ";
+            cout << "⚠️  Please enter a valid non-negative interest rate: ";
             felsöka();
         }
-        // Convert interest rate percentage to decimal fraction
         l.interestRate /= 100.0f;
 
-        cout << "⏳ Duration (years)  : ";
+        cout << "⏳ Duration (years)         : ";
         while (!(cin >> l.years) || l.years <= 0) {
-            cout << "⚠️ Please enter a valid positive duration in years: ";
+            cout << "⚠️  Please enter a valid positive duration in years: ";
             felsöka();
         }
 
@@ -85,32 +86,31 @@ void appendPerson(vector<Loan>& people) {
 
         cout << fixed << setprecision(2);
         cout << "\n✅ Loan Registered Successfully!\n";
-        cout << "💰 Total to Pay Back       : " << totalToPay << " kr\n";
-        cout << "💰 Total to Pay Back/month : " << totalPerMonth << " kr\n";
-        printLine('=', 50);
+        cout << "💰 Total to Pay Back        : " << totalToPay << " kr\n";
+        cout << "💰 Monthly Payment          : " << totalPerMonth << " kr\n";
 
+        printLine('=', 70);
         people.push_back(l);
 
-        // Ask if user wants to add another loan
-        cout << "➕ Add another loan? (y/n): ";
+        cout << "\n➕ Add another loan? (y/n): ";
         char cont;
         cin >> cont;
-        if (cont != 'y' && cont != 'Y') {
-            break;
-        }
+        if (cont != 'y' && cont != 'Y') break;
 
     } while (true);
 }
 
 void showPeople(const vector<Loan>& people) {
+    clearScreen();
     if (people.empty()) {
         cout << "\n⚠️  No loans registered yet.\n";
+        waitForEnter();
         return;
     }
 
-    printLine('=', 130);
-    cout << "📄 Registered Loans\n";
-    printLine('=', 130);
+    printLine('=', 150);
+    cout << setw(90) << "📄 Registered Loans 📄" << "\n";
+    printLine('=', 150);
 
     cout << "╔════╦════════════════╦════════════════╦════════════════════╦════════════╦════════════╦════════╦════════════════╦════════════════╗\n";
     cout << "║ ID ║ First Name     ║ Last Name      ║ Personal Number    ║ Loan (kr)  ║ Rate (%)   ║ Years  ║ 💸 Per Month   ║  Total to Pay  ║\n";
@@ -138,8 +138,10 @@ void showPeople(const vector<Loan>& people) {
 }
 
 void findPerson(const vector<Loan>& people) {
+    clearScreen();
     if (people.empty()) {
         cout << "\n⚠️  No loans registered yet.\n";
+        waitForEnter();
         return;
     }
 
@@ -157,9 +159,9 @@ void findPerson(const vector<Loan>& people) {
             float totalToPay = p.calculateTotalToPay();
             float perMonth = totalToPay / (p.years * 12);
 
-            printLine('=', 130);
-            cout << "📋 Loan Details for Personal Number: " << p.personnumber << "\n";
-            printLine('=', 130);
+            printLine('=', 150);
+            cout << "📋 Loan Details for: " << p.name << " " << p.lastname << " (" << p.personnumber << ")\n";
+            printLine('=', 150);
 
             cout << "╔════╦════════════════╦════════════════╦════════════════════╦════════════╦════════════╦════════╦════════════════╦════════════════╗\n";
             cout << "║ ID ║ First Name     ║ Last Name      ║ Personal Number    ║ Loan (kr)  ║ Rate (%)   ║ Years  ║ 💸 Per Month   ║  Total to Pay  ║\n";
@@ -184,16 +186,15 @@ void findPerson(const vector<Loan>& people) {
     }
 
     if (!found) {
-        cout << "❌ No person found with that personal number.\n";
+        cout << "\n❌ No person found with that personal number.\n";
+        waitForEnter();
     }
 }
 
-
-
-
 void deletePerson(vector<Loan>& people) {
+    clearScreen();
     if (people.empty()) {
-        cout << "\n⚠️ No loans registered yet.\n";
+        cout << "\n⚠️  No loans registered yet.\n";
         waitForEnter();
         return;
     }
@@ -201,25 +202,26 @@ void deletePerson(vector<Loan>& people) {
     cin.ignore();
 
     string delPN;
-    cout << "\n🗑️ Enter personal number to delete: ";
+    cout << "\n🗑️  Enter personal number to delete: ";
     getline(cin, delPN);
 
     for (size_t i = 0; i < people.size(); ++i) {
         if (people[i].personnumber == delPN) {
-            cout << "⚠️ Are you sure you want to delete the loan for " << people[i].name << " " << people[i].lastname << "? (y/n): ";
+            cout << "\n⚠️  Are you sure you want to delete the loan for " << people[i].name << " " << people[i].lastname << "? (y/n): ";
             char confirm;
             cin >> confirm;
             if (confirm == 'y' || confirm == 'Y') {
                 people.erase(people.begin() + i);
-                cout << "✅ Loan deleted successfully.\n";
+                cout << "\n✅ Loan deleted successfully.\n";
             } else {
-                cout << "❌ Deletion canceled.\n";
+                cout << "\n❌ Deletion canceled.\n";
             }
             waitForEnter();
             return;
         }
     }
-    cout << "❌ No loan found with that personal number.\n";
+
+    cout << "\n❌ No loan found with that personal number.\n";
     waitForEnter();
 }
 
@@ -228,43 +230,49 @@ int main() {
 
     while (true) {
         clearScreen();
-        cout << "\n📘 Loan Management System\n";
-        printLine('=', 30);
-        cout << "\n1. ➕  Add New Loan\n";
-        cout << "\n2. 📄  Show All Loans\n";
-        cout << "\n3. 🔍  Search by Personal Number\n";
-        cout << "\n4. 🗑️   Delete Loan\n";
-        cout << "\n5. ❌  Exit\n";
-        printLine('=', 30);
+        printLine('=', 70);
+        cout << setw(48) << "📘 LOAN MANAGEMENT SYSTEM 📘\n";
+        printLine('=', 70);
 
-        cout << "Choose an option (1-4): ";
+        cout << "\n";
+        cout << setw(40) << "🏦 Main Menu 🏦\n";
+        printLine('-', 70);
+
+        cout << "\n[1] ➕  Add New Loan\n";
+        cout << "\n[2] 📄  Show All Loans\n";
+        cout << "\n[3] 🔍  Search by Personal Number\n";
+        cout << "\n[4] 🗑️   Delete Loan\n";
+        cout << "\n[5] ❌  Exit Program\n";
+
+        cout << "\n";
+        printLine('-', 70);
+        cout << "👉 Choose an option (1-5): ";
+
         int choice;
         cin >> choice;
 
         switch (choice) {
             case 1:
-            clearScreen();
                 appendPerson(people);
                 break;
             case 2:
-                clearScreen();
                 showPeople(people);
                 break;
             case 3:
-                clearScreen();
                 findPerson(people);
                 break;
             case 4:
-                clearScreen();
                 deletePerson(people);
                 break;
-
             case 5:
-                cout << "👋 Exiting program. Have a blessed day!\n";
+                clearScreen();
+                cout << "\n🙏 Thank you for using the system.\n";
+                cout << "✨ May your finances be blessed! ✨\n\n";
                 return 0;
             default:
-                cout << "⚠️ Invalid choice. Try again.\n";
+                cout << "\n⚠️ Invalid choice. Please try again.\n";
                 felsöka();
+                waitForEnter();
         }
     }
-} 
+}
