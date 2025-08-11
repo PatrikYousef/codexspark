@@ -57,6 +57,54 @@ Exit
 💼━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━💼
 ```
 
+# 📈 GitHub Stats Tracker GitHub_Stats_Tracker.cpp
+
+Ett **C++-program** som hjälper dig att manuellt **spåra och analysera din GitHub-statistik över tid** – perfekt eftersom GitHub endast visar trafikdata i 14 dagar.  
+Med den här applikationen kan du logga **kloner, unika kloner, visningar och projektantal**, samt se genomsnitt och historik.
+
+---
+
+## ✨ Funktioner
+
+✅ **Logga nya GitHub-statistikposter**
+- Kloner (antal nedladdningar)
+- Unika kloner (unika användare)
+- Visningar
+- Antal projekt
+
+✅ **Visa sammanlagd statistik**
+- Totalt antal kloner, unika kloner, visningar och projekt
+- Genomsnitt per projekt
+- Procentandel unika kloner
+- Motiverande feedback beroende på resultat
+
+✅ **Historiklogg**
+- Se alla tidigare registreringar med datum och tid
+
+✅ **Återställning**
+- Nollställ all statistik vid behov
+
+✅ **Användarvänligt gränssnitt**
+- Emojis för tydlighet
+- Rensar skärmen automatiskt beroende på OS
+- Skydd mot ogiltiga inmatningar
+
+---
+```
+## 📷 Skärmdumpar
+
+**Huvudmeny**
+📈 GITHUB STATS TRACKER 📈
+[1] ➕ Add Project Stats
+[2] 📊 Show Total Stats
+[3] ♻️ Reset All Stats
+[4] ❌ Exit Program
+[5] 🕓 View Project Log
+
+```
+
+
+
 
 
 
