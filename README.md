@@ -1,9 +1,5 @@
 # 🌟 Ultimate Multi-Project README Collection
 
-> A **curated and beautifully formatted** set of `README.md` templates for your console applications — optimized for GitHub presentation, discoverability, and user engagement.
-
----
-
 ## 🏦 **C++ Console Banking System** (`bankaccount.cpp`)
 
 ### 📋 Overview
