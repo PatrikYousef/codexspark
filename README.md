@@ -184,12 +184,6 @@ g++ -std=c++17 bankaccount.cpp -o bankaccount
 
 ---
 
-## 🌍 **GitHub Optimization Tips**
 
-* 🏷️ Use repository topics (`c++`, `cli`, `finance`, etc.).
-* 🖼️ Add screenshots & GIFs.
-* 🛡️ Use shields.io badges for stars, license, build.
-* 📌 Pin top repos on your profile.
-* 📚 Include **Install**, **Usage**, & **Roadmap** sections.
 
 
