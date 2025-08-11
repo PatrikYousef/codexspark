@@ -1,4 +1,4 @@
-# 🏦 C++ Console Banking System Bankaccount.cpp
+# 🏦 C++ Bankaccount.cpp
 
 En komplett **bankapplikation i C++** med **användarhantering, kontoskapande, saldo- och transaktionshantering** – allt i en vacker och användarvänlig terminaldesign med emojis för extra tydlighet.  
 Byggd för att vara **enkel att använda**, **plattformskompatibel** och **modulärt uppbyggd**.
@@ -57,7 +57,7 @@ Exit
 💼━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━💼
 ```
 
-# 📈 GitHub Stats Tracker GitHub_Stats_Tracker.cpp
+# 📈 GitHub_Stats_Tracker.cpp
 
 Ett **C++-program** som hjälper dig att manuellt **spåra och analysera din GitHub-statistik över tid** – perfekt eftersom GitHub endast visar trafikdata i 14 dagar.  
 Med den här applikationen kan du logga **kloner, unika kloner, visningar och projektantal**, samt se genomsnitt och historik.
@@ -102,8 +102,50 @@ Med den här applikationen kan du logga **kloner, unika kloner, visningar och pr
 [5] 🕓 View Project Log
 
 ```
+# 🏨 Royal Hotel Booking System
 
+Ett **C++-baserat bokningssystem för hotell** med ett vackert och tydligt terminalgränssnitt.  
+Systemet gör det enkelt att **lägga till, söka, uppdatera och visa gäster**, samt att se en **interaktiv rumsstatuskarta**.
 
+---
+
+## ✨ Funktioner
+
+✅ **Lägg till gäst**  
+- Registrera namn, personnummer, vistelselängd och rum  
+- Rumsstatuskarta för att enkelt se vilka rum som är lediga  
+- Automatisk beräkning av totalpris (500 SEK per dag)  
+
+✅ **Visa gästlista**  
+- Tydligt tabellformat med namn, rum, vistelselängd och totalpris  
+
+✅ **Sök gäst**  
+- Sök med personnummer och se all gästinformation direkt  
+
+✅ **Uppdatera gästinformation**  
+- Ändra namn, vistelselängd, rum och personnummer  
+- Kontroll för att förhindra dubbelbokning av rum  
+
+✅ **Rumsstatuskarta**  
+- Visar alla 100 rum (0–99) med ✅ för lediga och ❌ för upptagna  
+
+✅ **Snygg terminaldesign**  
+- Emojis och tabelljustering för bättre läsbarhet  
+- Fungerar på **Windows**, **macOS** och **Linux**  
+
+---
+```
+## 📷 Skärmdumpar
+
+**Huvudmeny**
+
+1️⃣ ➤ 🧾 Add New Guest to the Hotel
+2️⃣ ➤ 📋 View All Guests (Guest List)
+3️⃣ ➤ 🔍 Search Guest by Personal Number
+4️⃣ ➤ 🛠️ Update Guest Details
+5️⃣ ➤ 🏨 Show Room Status Map
+6️⃣ ➤ ❌ Exit the Booking System
+```
 
 
 
