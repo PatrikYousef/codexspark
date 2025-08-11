@@ -210,13 +210,9 @@ A clean, menu-driven app for number storage, sorting, summing, and searching.
 ```
 
 ---
-# 📚 Round 2 - Project README Collection
 
-This document contains beautiful, GitHub-ready READMEs for each project in **Round 2**, complete with filenames, facts, features, and usage instructions.
 
----
-
-## 1️⃣ `matte.cpp` - Mathematics Utility Tool 🧮
+##  `matte.cpp` - Mathematics Utility Tool 🧮
 
 ### 📖 Overview
 
@@ -237,7 +233,7 @@ A feature-rich mathematics console application that can perform multiple types o
 
 ---
 
-## 2️⃣ `person_manager.cpp` - Person Management System 🧍‍♂️
+##  `person_manager.cpp` - Person Management System 🧍‍♂️
 
 ### 📖 Overview
 
@@ -258,7 +254,7 @@ A data management console program to store, search, and update personal informat
 
 ---
 
-## 3️⃣ `SavingMoney.cpp` - Personal Savings Planner 💰
+## `SavingMoney.cpp` - Personal Savings Planner 💰
 
 ### 📖 Overview
 
@@ -278,7 +274,7 @@ A savings tracking app to help users reach their financial goals.
 
 ---
 
-## 4️⃣ `savings_tracker.cpp` - Advanced Savings Tracker 📈
+## `savings_tracker.cpp` - Advanced Savings Tracker 📈
 
 ### 📖 Overview
 
@@ -298,7 +294,7 @@ An improved savings tracker with advanced reporting.
 
 ---
 
-## 5️⃣ `StockMate.cpp` - Stock Portfolio Tracker 📊
+## `StockMate.cpp` - Stock Portfolio Tracker 📊
 
 ### 📖 Overview
 
@@ -318,7 +314,7 @@ Tracks stock holdings, calculates profits/losses, and displays financial insight
 
 ---
 
-## 6️⃣ `todolist_calender.cpp` - To-Do List with Calendar 🗓
+## `todolist_calender.cpp` - To-Do List with Calendar 🗓
 
 ### 📖 Overview
 
@@ -338,7 +334,7 @@ A task management tool with a built-in calendar.
 
 ---
 
-## 7️⃣ `WarEnrollmentSystem.cpp` - Military Enrollment System 🎖
+## `WarEnrollmentSystem.cpp` - Military Enrollment System 🎖
 
 ### 📖 Overview
 
