@@ -120,5 +120,60 @@ Programmet visar en enkel meny:
 [3] ♻️   Reset All Stats
 [4] ❌  Exit Program
 [5] 🕓  View Project Log
+```
 
+## Royal Hotel Bokningssystem 
+
+🏨 Välkommen till **Royal Hotel Bokningssystem** — en enkel och användarvänlig C++-konsolapplikation för att hantera hotellbokningar, rumstilldelningar och gästinformation på ett effektivt sätt.
+
+---
+
+## Funktioner
+
+- 🧾 Lägg till nya gäster med information som förnamn, efternamn, personnummer, antal dagar och rumsnummer.
+- 📋 Visa en komplett lista över alla gäster med deras bokningsdetaljer.
+- 🔍 Sök efter en gäst via personnummer för snabb åtkomst till bokningsinformation.
+- 🛠️ Uppdatera gästens information om du råkat lägga in fel data.
+- 🏨 Visa en tydlig rumskarta som visar vilka rum (0-99) som är lediga (✅) eller bokade (❌).
+- ✅ Validering av inmatning för att säkerställa korrekt data.
+- ✨ Användarvänligt gränssnitt med emojis för tydlig navigering och bättre användarupplevelse.
+- 💰 Automatisk beräkning av totalpris baserat på antal dagar.
+
+---
+
+🏨💫═════════════════════════════════════════════════════════════════════════💫🏨
+🌟                     WELCOME TO THE ROYAL HOTEL BOOKING SYSTEM            🌟
+🏨💫═════════════════════════════════════════════════════════════════════════💫🏨
+
+🛎️  Please select an option below to continue:
+
+1️⃣  ➤ 🧾 Add New Guest to the Hotel
+2️⃣  ➤ 📋 View All Guests (Guest List)
+3️⃣  ➤ 🔍 Search Guest by Personal Number
+4️⃣  ➤ 🛠️ Update Guest Details
+5️⃣  ➤ 🏨 Show Room Status Map
+6️⃣  ➤ ❌ Exit the Booking System
+
+👉 Enter your choice (1–6):
+
+# 📚 Bibliotekssystem i C++
+
+Välkommen till detta enkla och användarvänliga **bibliotekssystem** utvecklat i C++. Programmet hanterar böcker, användare och lånefunktioner via ett terminalgränssnitt med tydliga menyer och emojis.
+
+---
+
+## Funktioner
+
+- ➕ Lägg till nya böcker med namn, bokkod och antal exemplar.
+- 📖 Visa alla registrerade böcker i biblioteket.
+- ➕ Lägg till nya användare med förnamn, efternamn, personnummer, användarnamn och lösenord.
+- 👥 Visa alla registrerade användare.
+- 📚 Låna ut böcker till registrerade användare baserat på personnummer och bokkod.
+- 🔍 Sök efter böcker via bokkod.
+- 🔍 Sök efter användare via personnummer.
+- 📜 Visa bibliotekets regler för utlåning.
+- 📚 Visa böcker som en användare har lånat.
+- ❌ Avsluta programmet.
+
+---
 
