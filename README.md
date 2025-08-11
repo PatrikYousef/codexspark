@@ -184,6 +184,131 @@ g++ -std=c++17 bankaccount.cpp -o bankaccount
 
 ---
 
+## ✨ Number Manager
+
+**Manage and analyze numeric data with style.**
+
+### 🔍 Overview
+
+A clean, menu-driven app for number storage, sorting, summing, and searching.
+
+### 🛠 Features
+
+* ➕ Add numbers with safe input handling
+* 📊 Sort ascending or descending
+* ➗ Calculate sum and average instantly
+* 🔍 Search for specific numbers
+* 🧹 Clear all stored data
+
+### 📂 Quickstart
+
+```bash
+# Compile
+ g++ number_manager.cpp -o number_manager
+# Run
+ ./number_manager
+```
+
+---
+
+## 🧑‍💼 Person Manager
+
+**Effortlessly handle personal records with VAT calculations.**
+
+### 🔍 Overview
+
+Keeps track of people’s data, VAT computations, and allows easy modifications.
+
+### 🛠 Features
+
+* 📋 Add, update, and delete people
+* 🏷 VAT price calculations
+* 🗂 Search records by name
+* 📊 Pretty table output
+
+---
+
+## 💰 Saving Money for Stuff
+
+**Track your budget to meet savings goals.**
+
+### 🔍 Overview
+
+Budget management tool for income and expense tracking.
+
+### 🛠 Features
+
+* 💵 Add incomes and expenses
+* 📊 Track categories (bills, food, clothes)
+* 🔍 Search and edit records
+* 🎯 Savings goal calculator
+
+---
+
+## 📈 Personal Savings Tracker
+
+**Stay on top of your savings journey.**
+
+### 🔍 Overview
+
+Helps plan, track, and visualize progress toward savings goals.
+
+### 🛠 Features
+
+* 🎯 Set savings goals
+* 📅 Monthly saving targets
+* 📊 Track progress
+* 🔔 Optional notifications
+
+---
+
+## 📦 StockMate
+
+**A lightweight inventory and sales management app.**
+
+### 🔍 Overview
+
+Manages inventory with integrated user accounts and salary/tax calculations.
+
+### 🛠 Features
+
+* 👤 Login system
+* 💼 User salary and tax tracking
+* 📦 Add and list products
+* 🛒 Buy items from inventory
+
+---
+
+## 📅 To-DoList Calendar
+
+**Plan your year with a 12-month interactive calendar.**
+
+### 🔍 Overview
+
+Monthly task management with ANSI color-coded UI.
+
+### 🛠 Features
+
+* 📅 Add tasks per month/day
+* 🎨 Color-coded display
+* 🔍 Search and edit tasks
+
+---
+
+## 🪖 War Enrollment System
+
+**A playful recruitment screening system.**
+
+### 🔍 Overview
+
+Manages enlistee eligibility checks with CRUD functions.
+
+### 🛠 Features
+
+* 📏 Height eligibility validation
+* 🚻 Gender verification
+* 📋 Full CRUD on enlistee data
+
 
 
 
