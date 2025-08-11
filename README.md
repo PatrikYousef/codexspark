@@ -20,6 +20,25 @@
 
 ---
 
+# 🏥 Medicaid System (C++)
+
+> Ett konsolbaserat system för att **registrera personer**, **hantera medicinska tillstånd & kostnader** och **beräkna total vårdkostnad** per person – med tydliga tabeller, robust inmatningskontroll och en ren terminallayout.
+
+---
+
+## ✨ Funktioner
+
+- ➕ **Lägg till person** (ID genereras automatiskt)
+- 📋 **Visa alla personer** i snygg tabell (ID, förnamn, efternamn, personnummer, kostnad)
+- 🏥 **Lägg till medicinskt tillstånd** med **årlig kostnad**
+- 🗂️ **Visa medicinska tillstånd** (ID, namn, kostnad/år)
+- 💰 **Beräkna vårdkostnad per person** genom att välja ett eller flera tillstånd + antal år
+- 🔍 **Sök person** via **personnummer**
+- 🧹 **Skärmrensning** per OS (Windows/macOS/Linux)
+- 🛡️ **Inmatningsvalidering** för siffror (kostnad/år & antal år)
+
+---
+
 ## 🎓 **Betygssystem** (`betygsystem.cpp`)
 
 ### 📋 Översikt
