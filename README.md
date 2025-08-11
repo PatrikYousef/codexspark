@@ -187,11 +187,4 @@ g++ -std=c++17 LoanManagement.cpp -o loans
 
 ---
 
-## 🌍 **Tips for GitHub Optimization**
-
-* 🏷️ Add repository **topics** (`c++`, `cli`, `education`, etc.).
-* 🖼️ Include **screenshots/GIFs**.
-* 📌 Pin top repositories to profile.
-* 🛡️ Add badges for build, license, stars.
-* 📚 Include install, usage, and contributing sections.
 
