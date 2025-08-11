@@ -20,6 +20,34 @@
 
 ---
 
+# 🏥 Loan & Prescription Registry
+
+💊 Ett avancerat C++-program för att hantera **patientregister** och **läkemedelsförskrivningar** – med snygg terminaldesign, emojis och full inmatningsvalidering.
+
+---
+
+## 📋 **Översikt**
+Detta program låter dig:
+- 🆕 Registrera patienter  
+- 📋 Visa patientlistor  
+- 💊 Lägga till förskrivningar  
+- 🔍 Söka upp patienters läkemedel  
+- 🗑 Ta bort patientposter  
+
+---
+
+## ✨ **Funktioner**
+
+| Funktion | Beskrivning |
+|----------|-------------|
+| 🆕 Registrera patient | Lägger till ny patient med namn & ID |
+| 📋 Visa patienter | Skriver ut alla patienter i tabellformat |
+| 🗑 Ta bort patient | Tar bort patient efter ID |
+| 💊 Lägg till förskrivning | Lägger till läkemedel med kvantitet |
+| 🔍 Visa förskrivningar | Visar alla läkemedel för vald patient |
+
+---
+
 # 🏥 Medicaid System (C++)
 
 > Ett konsolbaserat system för att **registrera personer**, **hantera medicinska tillstånd & kostnader** och **beräkna total vårdkostnad** per person – med tydliga tabeller, robust inmatningskontroll och en ren terminallayout.
