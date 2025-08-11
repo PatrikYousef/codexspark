@@ -21,13 +21,6 @@
 * 🛠️ Shows **exception handling** & **input validation**.
 * 📚 Practical example of **menu-driven CLI apps**.
 
-### 🚀 Quickstart
-
-```bash
-g++ -std=c++17 bankaccount.cpp -o bankaccount
-./bankaccount
-```
-
 ---
 
 ## 🎓 **Grade System** (`betygsystem.cpp`)
