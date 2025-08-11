@@ -1,42 +1,47 @@
 # Bank Account Management System (C++ Console App) bankaccount.cpp
+---
 
-En enkel och användarvänlig konsolapplikation i C++ för att hantera bankkonton och användare. Perfekt som ett lärorikt projekt för att visa upp grundläggande och mellanliggande programmeringskoncept som filhantering, objektorientering och säker användarhantering.
+## 📋 Projektbeskrivning
+
+En enkel och användarvänlig konsolapplikation skriven i C++ för att skapa och hantera bankkonton och användare.  
+Perfekt som ett läroprojekt för att visa grundläggande programmeringskoncept som datastrukturer, funktioner, användarhantering, säkerhet och användargränssnitt i terminalen.
 
 ---
 
-## Funktioner
+## 🚀 Funktioner
 
 - **Användarhantering**  
-  - Skapa och ta bort användarkonton (första namn, efternamn, användarnamn, lösenord)  
-  - Enkel kontroll av unika användarnamn
-
+  - Skapa och ta bort användarkonton med unika användarnamn  
 - **Bankkonton**  
-  - Skapa bankkonto med automatiskt genererat kontonummer (4 grupper av 4 siffror), CVV och PIN-kod  
-  - Spara bankens namn och kundens namn  
-  - Ange utgångsdatum för kort (MMYY)  
-  - Visa alla bankkonton i tabellformat med snygg layout  
-  - Ta bort bankkonto via kundens förnamn  
-
+  - Skapa konto med automatiskt genererade kontonummer, CVV och PIN-kod  
+  - Ange bankens namn och kontoinnehavarens namn  
+  - Visa konton i snygg tabell  
+  - Ta bort konto baserat på kundens förnamn  
 - **Pengarhantering**  
-  - Insättning och uttag via PIN-kod-autentisering  
+  - Sätt in och ta ut pengar med PIN-autentisering  
   - Kontroll av saldo vid uttag  
-  - Felhantering för ogiltiga belopp eller PIN
-
 - **Användarvänligt gränssnitt**  
-  - Menyer med val för att navigera mellan funktioner  
-  - Rensning av skärm för bättre läsbarhet  
-  - Emoji och symboler för tydlig och trevlig visuell presentation  
+  - Menyer med val, tydlig layout och emojis för bättre upplevelse  
+  - Automatisk rensning av skärm för ökad läsbarhet
 
 ---
 
-## Installation och körning
+## 📦 Kom igång
 
-1. **Kompilera** med valfri C++-kompilator, t.ex.:
+### Kompilera och kör
 
-bash
+1. Klona repo eller ladda ner koden.  
+2. Kompilera med valfri C++-kompilator (t.ex. g++):
+
+```bash
 g++ -o bankapp main.cpp
-
-Exempel
+Kör programmet:
+./bankapp
+Användning
+Följ menyn för att skapa användare och bankkonton.
+Hantera pengar med insättning och uttag via PIN-kod.
+Visa eller ta bort konton enkelt.
+📖 Exempel på meny
 === User Menu ===
 1. Manage accounts (Create/Delete User)
 2. Continue to Bank Menu
@@ -61,5 +66,7 @@ Account created successfully!
 5️⃣  ➤ 🚪 Exit
 6️⃣  ➤ 🔐 Back to User Menu
 Your choice:
-
-
+🔧 Tekniker och bibliotek
+C++ Standardbibliotek
+Konsolbaserat användargränssnitt
+Slumpgenerering för kontonummer, CVV och PIN-kod
