@@ -1,346 +1,233 @@
-# 🌟 **Ultimate Multi-Project README Collection**
+# 🌟 **Ultimat Multi-Projekt README-samling**
 
-## 🏦 **C++ Console Banking System** (`bankaccount.cpp`)
+## 🏦 **C++ Konsolbankssystem** (`bankaccount.cpp`)
 
-### 📋 Overview
+### 📋 Översikt
+💳 Ett komplett **bank-simuleringssystem** med **användarhantering**, **säker kontoskapning** och **transaktionshantering** — allt i en elegant terminalmiljö.
 
-💳 A comprehensive **banking simulation** with **user management**, **secure account creation**, and **transaction processing** — all inside an elegant terminal UI.
+### 🔍 Nyckelfakta
+* 📑 **Tvåstegsmenyer**: Användarmeny & Bankmeny.
+* 🔢 Auto-genererade **kontonummer**, **CVV-koder** och **PIN-koder**.
+* 🎂 **Ålderskontroll** (18+) vid kontoöppning.
+* 💰 Realtidsuppdatering av saldo vid insättning/uttag.
+* 📊 Tabellutskrift med exakt formatering.
+* 💻 **Plattformsoberoende** skärmrensningsfunktion.
 
-### 🔍 Key Facts
-
-* 📑 **Two-tier menus**: User Menu & Bank Menu.
-* 🔢 Auto-generated **account numbers**, **CVVs**, and **PINs**.
-* 🎂 **Age verification** (18+) before creating accounts.
-* 💰 Real-time **deposit** & **withdrawal** balance updates.
-* 📊 Tabular output with precision formatting.
-* 💻 **Cross-platform** clear screen function.
-
-### 🎓 Educational Value
-
-* 💡 Demonstrates **OOP with structs**.
-* 🛠️ Shows **exception handling** & **input validation**.
-* 📚 Practical example of **menu-driven CLI apps**.
+### 🎓 Lärandemål
+* 💡 Demonstrerar **OOP med structs**.
+* 🛠️ Visar **felhantering** & **inmatningsvalidering**.
+* 📚 Praktiskt exempel på **menybaserade CLI-appar**.
 
 ---
 
-## 🎓 **Grade System** (`betygsystem.cpp`)
+## 🎓 **Betygssystem** (`betygsystem.cpp`)
 
-### 📋 Overview
+### 📋 Översikt
+📚 Ett **betygshanteringssystem** som lagrar, validerar och visar **A–F-betyg** i ett snyggt gränssnitt.
 
-📚 A **grade tracker** that stores, validates, and displays **A–F grades** in a tidy interface.
+### 🔍 Nyckelfakta
+* ✅ Validering för att endast acceptera A–F.
+* 📂 Lagrar betyg i en `vector`.
+* 🖥️ Rensar skärmen för tydliga menyer.
 
-### 🔍 Key Facts
-
-* ✅ Validation to ensure only A–F input.
-* 📂 Stores grades in a vector.
-* 🖥️ Clears screen for clean menus.
-
-### 🎓 Educational Value
-
-* Perfect for **beginners** learning vectors & control flow.
+### 🎓 Lärandemål
+* Perfekt för **nybörjare** som lär sig `vector` och kontrollflöde.
 
 ---
 
-## 📖 **Bible Study App** (`BibleStudy.cpp`)
+## 📖 **Bibelstudie-app** (`BibleStudy.cpp`)
 
-### 📋 Overview
+### 📋 Översikt
+✝️ En **trosbaserad** CLI som levererar bibelverser och uppmuntrar till andlig reflektion.
 
-✝️ A **faith-based** CLI delivering Bible verses & encouraging spiritual reflection.
+### 🔍 Nyckelfakta
+* 📜 Sektioner: **budorden, lovsång, visdom, profetia**.
+* 🙏 Interaktiva frågor för användaren.
+* ⏳ Inbyggda pauser för att skapa lugn och eftertanke.
 
-### 🔍 Key Facts
-
-* 📜 Sections include **commandments, praise, wisdom, prophecy**.
-* 🙏 Interactive prompts for user participation.
-* ⏳ Built-in pauses to pace reading.
-
-### 🎓 Educational Value
-
-* Inspires daily study habits with interactive learning.
+### 🎓 Lärandemål
+* Inspirerar till dagliga studier med interaktiv inlärning.
 
 ---
 
-## 🔢 **Binary → Decimal Converter** (`binarynumberscounter.cpp`)
+## 🔢 **Binär → Decimal-omvandlare** (`binarynumberscounter.cpp`)
 
-### 📋 Overview
+### 📋 Översikt
+💻 Konverterar giltiga **8-bitars binära tal** direkt till decimal.
 
-💻 Converts validated **8-bit binary numbers** into decimal format instantly.
+### 🔍 Nyckelfakta
+* ✔️ Strikt längd- och teckenvalidering.
+* ⚡ Direktkonvertering med `stoi` bas 2.
 
-### 🔍 Key Facts
-
-* ✔️ Strict length & content validation.
-* ⚡ Instant conversion with `stoi` base 2.
-
-### 🎓 Educational Value
-
-* Ideal for teaching **binary fundamentals** & validation logic.
+### 🎓 Lärandemål
+* Perfekt för att lära sig **binära tal** & **valideringslogik**.
 
 ---
 
-## 📐 **Area & Perimeter Calculator** (`calculation_area_and_permiters.py`)
+## 📐 **Area- & Omkretsräknare** (`calculation_area_and_permiters.py`)
 
-### 📋 Overview
+### 📋 Översikt
+📏 Python-CLI för att beräkna **area och omkrets** på grundläggande former.
 
-📏 Python CLI for calculating **area & perimeter** of basic shapes.
-
-### 🔍 Key Facts
-
-* 📊 Shape-specific formulas.
-* ✅ Input validation.
-* 🔧 Modular design for extension.
+### 🔍 Nyckelfakta
+* 📊 Formelbaserade beräkningar per form.
+* ✅ Inmatningsvalidering.
+* 🔧 Modulär design för enkel utbyggnad.
 
 ---
 
-## 📈 **GitHub Stats Tracker** (`GitHub.StatsTracker.cpp`)
+## 📈 **GitHub Statistikspårare** (`GitHub.StatsTracker.cpp`)
 
-### 📋 Overview
+### 📋 Översikt
+📊 Manuellt verktyg för att följa GitHub-statistik — perfekt för att slippa 14-dagarsgränsen.
 
-📊 Manual tracker for GitHub analytics — perfect for bypassing the 14-day view limit.
+### 🔍 Nyckelfakta
+* 🧮 Spårar kloner, unika kloner, visningar och projektantal.
+* 📅 Loggar med tidsstämpel.
+* 🗂️ Beräknar **medelvärden** och **procent**.
 
-### 🔍 Key Facts
-
-* 🧮 Tracks clones, unique clones, views, & project counts.
-* 📅 Timestamped logs.
-* 🗂️ Calculates **averages** & **percentages**.
-
-### 🎓 Educational Value
-
-* Teaches **aggregation logic** & **formatted output**.
+### 🎓 Lärandemål
+* Lär ut **aggregeringslogik** & **formaterad utskrift**.
 
 ---
 
-## 🎓 **GPA Calculator** (`gpa.cpp`)
+## 🎓 **GPA-räknare** (`gpa.cpp`)
 
-### 📋 Overview
+### 📋 Översikt
+🎯 Beräknar viktat GPA baserat på betyg och kursens poäng.
 
-🎯 Calculates weighted GPA from grades & credits.
+### 🔍 Nyckelfakta
+* 🔢 Mappar A–E till en GPA-skala.
+* 🧮 Viktar efter kursens poäng.
 
-### 🔍 Key Facts
-
-* 🔢 Maps A–E → numeric GPA scale.
-* 🧮 Weighted by course credits.
-
-### 🎓 Educational Value
-
-* Demonstrates **weighted averages**.
+### 🎓 Lärandemål
+* Visar **beräkning av viktat medelvärde**.
 
 ---
 
-## 🏨 **Royal Hotel Booking System** (`hotel_booking_system.cpp`)
+## 🏨 **Kungliga Hotellbokningssystemet** (`hotel_booking_system.cpp`)
 
-### 📋 Overview
+### 📋 Översikt
+🏨 Ett boknings- och gästadministrationssystem med **live rumskarta**.
 
-🏨 A guest booking & management system with a **live room map**.
+### 🔍 Nyckelfakta
+* 🏠 100-rumskarta med ✅/❌ markeringar.
+* 🚫 Förhindrar dubbelbokningar.
+* 💰 Automatisk totalprisberäkning.
 
-### 🔍 Key Facts
-
-* 🏠 100-room map with ✅/❌ markers.
-* 🚫 Prevents double-booking.
-* 💰 Auto total price calculation.
-
-### 🎓 Educational Value
-
-* Shows **nested loops** & **data integrity checks**.
+### 🎓 Lärandemål
+* Exempel på **nästlade loopar** & **dataintegritet**.
 
 ---
 
-## 📚 **Library System** (`LibrarySystem.cpp`)
+## 📚 **Bibliotekssystem** (`LibrarySystem.cpp`)
 
-### 📋 Overview
+### 📋 Översikt
+📖 Hantering av böcker och användare med realtids spårning av tillgängliga exemplar.
 
-📖 Book & user management with real-time stock tracking.
+### 🔍 Nyckelfakta
+* 🗂️ Spårar antal exemplar i lager.
+* 🔗 Kopplar låntagare till specifika böcker.
 
-### 🔍 Key Facts
-
-* 🗂️ Tracks available copies.
-* 🔗 Links borrowers to books.
-
-### 🎓 Educational Value
-
-* Great example of **relational data structures**.
+### 🎓 Lärandemål
+* Bra exempel på **relationella datastrukturer**.
 
 ---
 
-## 💸 **Loan Management** (`LoanManagement.cpp`)
+## 💸 **Lånehantering** (`LoanManagement.cpp`)
 
-### 📋 Overview
+### 📋 Översikt
+💵 Registrerar lån och beräknar återbetalning med **enkel ränta**.
 
-💵 Registers loans & calculates repayments with **simple interest**.
+### 🔍 Nyckelfakta
+* 📥 Registrerar låntagaruppgifter och lånedetaljer.
+* 🧮 Beräknar månatliga och totala betalningar.
 
-### 🔍 Key Facts
-
-* 📥 Inputs borrower data & loan details.
-* 🧮 Calculates monthly & total payments.
-
-### 🎓 Educational Value
-
-* Applies **financial math** in C++.
+### 🎓 Lärandemål
+* Använder **finansiell matematik** i C++.
 
 ---
 
-## ✨ Number Manager
+## 🧮 **Matteverktyg** (`matte.cpp`)
 
-**Manage and analyze numeric data with style.**
+### 📋 Översikt
+En funktionsrik matematikapplikation för terminalen som kan göra flera typer av beräkningar.
 
-### 🔍 Overview
-
-A clean, menu-driven app for number storage, sorting, summing, and searching.
-
-### 🛠 Features
-
-* ➕ Add numbers with safe input handling
-* 📊 Sort ascending or descending
-* ➗ Calculate sum and average instantly
-* 🔍 Search for specific numbers
-* 🧹 Clear all stored data
-
-### 📂 Quickstart
-
-```bash
-# Compile
- g++ number_manager.cpp -o number_manager
-# Run
- ./number_manager
-```
+### 🔍 Nyckelfakta
+* ➗ Grundläggande aritmetik (add, sub, mult, div)
+* 📏 Geometriska beräkningar (area, omkrets)
+* 🧠 Procent- och proportioner
+* 🎯 Direktresultat i terminalen
 
 ---
 
+## 🧍‍♂️ **Personhanteringssystem** (`person_manager.cpp`)
 
-##  `matte.cpp` - Mathematics Utility Tool 🧮
+### 📋 Översikt
+Ett konsolbaserat register för att lagra, söka och uppdatera personuppgifter.
 
-### 📖 Overview
-
-A feature-rich mathematics console application that can perform multiple types of calculations for quick everyday use.
-
-**Features:**
-
-* ➗ Arithmetic operations (addition, subtraction, multiplication, division)
-* 📏 Geometry calculations (areas, perimeters)
-* 🧠 Percentage and proportion solvers
-* 🎯 Real-time result display
-
-**Facts:**
-
-* Written fully in **C++** for speed
-* Uses `iomanip` for clean console formatting
-* Lightweight — runs on any system with a C++ compiler
+### 🔍 Nyckelfakta
+* 🆔 Lägg till och ta bort poster
+* 🔍 Sök på namn eller ID
+* 🛠 Uppdatera information
+* 📋 Tabellformaterad utskrift
 
 ---
 
-##  `person_manager.cpp` - Person Management System 🧍‍♂️
+## 💰 **Sparplanerare** (`SavingMoney.cpp`)
 
-### 📖 Overview
+### 📋 Översikt
+Ett sparmålssystem för att hjälpa användare nå sina ekonomiska mål.
 
-A data management console program to store, search, and update personal information.
-
-**Features:**
-
-* 🆔 Add and remove person records
-* 🔍 Search by name or ID
-* 🛠 Update existing details
-* 📋 Display in a table format
-
-**Facts:**
-
-* Uses STL containers for scalability
-* Input validation to prevent errors
-* Ideal for learning CRUD operations in C++
+### 🔍 Nyckelfakta
+* 🎯 Målbaserad sparhantering
+* 📊 Procentuell framstegsvisning
+* 📅 Anpassningsbara mål och tidsramar
 
 ---
 
-## `SavingMoney.cpp` - Personal Savings Planner 💰
+## 📈 **Avancerad Sparspårare** (`savings_tracker.cpp`)
 
-### 📖 Overview
+### 📋 Översikt
+En förbättrad sparspårare med rapportfunktioner.
 
-A savings tracking app to help users reach their financial goals.
-
-**Features:**
-
-* 🎯 Goal-based savings tracking
-* 📊 Displays progress percentage
-* 📅 Adjustable targets and timeframes
-
-**Facts:**
-
-* Great beginner’s project for financial management logic
-* Uses clear-screen commands for better UX
-* Handles integer and floating-point calculations
+### 🔍 Nyckelfakta
+* 💵 Lägg till och ta ut belopp
+* 📈 Se utveckling över tid
+* 📝 Transaktionslogg
 
 ---
 
-## `savings_tracker.cpp` - Advanced Savings Tracker 📈
+## 📊 **Aktieportföljspårare** (`StockMate.cpp`)
 
-### 📖 Overview
+### 📋 Översikt
+Håller koll på aktieinnehav, räknar vinster/förluster och ger ekonomiska insikter.
 
-An improved savings tracker with advanced reporting.
-
-**Features:**
-
-* 💵 Add and withdraw amounts
-* 📈 View savings growth over time
-* 📝 Transaction log system
-
-**Facts:**
-
-* Stores data in dynamic containers
-* Modular design for future expansion
-* Uses `iomanip` for neat output
+### 🔍 Nyckelfakta
+* 📈 Spårar flera aktier
+* 💹 Beräknar procentuell avkastning
+* 📉 Enkel trendanalys (manuell inmatning)
 
 ---
 
-## `StockMate.cpp` - Stock Portfolio Tracker 📊
+## 🗓 **Att göra-lista med kalender** (`todolist_calender.cpp`)
 
-### 📖 Overview
+### 📋 Översikt
+Ett uppgiftshanteringsverktyg med inbyggd kalender.
 
-Tracks stock holdings, calculates profits/losses, and displays financial insights.
-
-**Features:**
-
-* 📈 Track multiple stocks
-* 💹 Calculate percentage gains/losses
-* 📉 Historical trend analysis (manual entry)
-
-**Facts:**
-
-* Focus on investment portfolio simulation
-* CLI-based for minimal resource use
-* Extensible for live API integration
+### 🔍 Nyckelfakta
+* ✅ Lägg till, ändra och ta bort uppgifter
+* 📅 Koppla uppgifter till datum
+* 🖥 Snygg och tydlig layout
 
 ---
 
-## `todolist_calender.cpp` - To-Do List with Calendar 🗓
+## 🎖 **Militärregistreringssystem** (`WarEnrollmentSystem.cpp`)
 
-### 📖 Overview
+### 📋 Översikt
+System för att registrera och administrera militärrekryter.
 
-A task management tool with a built-in calendar.
-
-**Features:**
-
-* ✅ Add, edit, and delete tasks
-* 📅 Assign tasks to specific dates
-* 🖥 Clean console layout with task highlighting
-
-**Facts:**
-
-* Combines scheduling and task tracking in one tool
-* Encourages productivity for console users
-* Structured with multiple functions for readability
-
----
-
-## `WarEnrollmentSystem.cpp` - Military Enrollment System 🎖
-
-### 📖 Overview
-
-A system for registering and managing military recruits.
-
-**Features:**
-
-* 🪖 Add and store recruit data
-* 📝 Update soldier profiles
-* 🔍 Search and display database
-
-**Facts:**
-
-* Demonstrates structured data management in C++
-* Includes strong input validation
-* Good example of a record-keeping system
+### 🔍 Nyckelfakta
+* 🪖 Lägger till och sparar rekryters data
+* 📝 Uppdaterar soldatprofiler
+* 🔍 Sök och visa register
