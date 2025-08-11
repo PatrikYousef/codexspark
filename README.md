@@ -70,3 +70,55 @@ Your choice:
 C++ Standardbibliotek
 Konsolbaserat användargränssnitt
 Slumpgenerering för kontonummer, CVV och PIN-kod
+
+```
+
+# GitHub Stats Tracker (C++ Console App) GitHubStatsTracker.cpp
+
+
+
+---
+
+## 🚀 Projektbeskrivning
+
+Ett terminalbaserat C++-program för att manuellt spåra statistik från dina GitHub-projekt.  
+GitHub visar trafikdata bara för de senaste 14 dagarna — detta verktyg hjälper dig att logga och analysera data över tid, inklusive:
+
+- Antal **kloner**
+- Antal **unika kloner**
+- Antal **visningar**
+- Totalt antal **projekt**
+
+---
+
+## 🛠️ Funktioner
+
+- 📥 **Lägg till nya statistikvärden** för projekt  
+- 📊 **Visa total statistik** och nyckeltal per projekt  
+- ♻️ **Återställ alla sparade data**  
+- 🕓 **Visa historik** med tidsstämplar  
+- 🚪 Enkel och tydlig menystyrning med emojis och layout  
+- Plattformoberoende skärmhantering (Windows / Unix)
+
+---
+
+## 📥 Kom igång
+
+### Bygga och köra
+
+1. Klona eller ladda ner projektet.  
+2. Kompilera med exempelvis `g++`:
+
+```bash
+g++ -o github_tracker main.cpp
+Kör programmet:
+./github_tracker
+📋 Användning
+Programmet visar en enkel meny:
+[1] ➕  Add Project Stats
+[2] 📊  Show Total Stats
+[3] ♻️   Reset All Stats
+[4] ❌  Exit Program
+[5] 🕓  View Project Log
+
+
