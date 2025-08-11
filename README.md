@@ -210,105 +210,148 @@ A clean, menu-driven app for number storage, sorting, summing, and searching.
 ```
 
 ---
+# 📚 Round 2 - Project README Collection
 
-## 🧑‍💼 Person Manager
-
-**Effortlessly handle personal records with VAT calculations.**
-
-### 🔍 Overview
-
-Keeps track of people’s data, VAT computations, and allows easy modifications.
-
-### 🛠 Features
-
-* 📋 Add, update, and delete people
-* 🏷 VAT price calculations
-* 🗂 Search records by name
-* 📊 Pretty table output
+This document contains beautiful, GitHub-ready READMEs for each project in **Round 2**, complete with filenames, facts, features, and usage instructions.
 
 ---
 
-## 💰 Saving Money for Stuff
+## 1️⃣ `matte.cpp` - Mathematics Utility Tool 🧮
 
-**Track your budget to meet savings goals.**
+### 📖 Overview
 
-### 🔍 Overview
+A feature-rich mathematics console application that can perform multiple types of calculations for quick everyday use.
 
-Budget management tool for income and expense tracking.
+**Features:**
 
-### 🛠 Features
+* ➗ Arithmetic operations (addition, subtraction, multiplication, division)
+* 📏 Geometry calculations (areas, perimeters)
+* 🧠 Percentage and proportion solvers
+* 🎯 Real-time result display
 
-* 💵 Add incomes and expenses
-* 📊 Track categories (bills, food, clothes)
-* 🔍 Search and edit records
-* 🎯 Savings goal calculator
+**Facts:**
 
----
-
-## 📈 Personal Savings Tracker
-
-**Stay on top of your savings journey.**
-
-### 🔍 Overview
-
-Helps plan, track, and visualize progress toward savings goals.
-
-### 🛠 Features
-
-* 🎯 Set savings goals
-* 📅 Monthly saving targets
-* 📊 Track progress
-* 🔔 Optional notifications
+* Written fully in **C++** for speed
+* Uses `iomanip` for clean console formatting
+* Lightweight — runs on any system with a C++ compiler
 
 ---
 
-## 📦 StockMate
+## 2️⃣ `person_manager.cpp` - Person Management System 🧍‍♂️
 
-**A lightweight inventory and sales management app.**
+### 📖 Overview
 
-### 🔍 Overview
+A data management console program to store, search, and update personal information.
 
-Manages inventory with integrated user accounts and salary/tax calculations.
+**Features:**
 
-### 🛠 Features
+* 🆔 Add and remove person records
+* 🔍 Search by name or ID
+* 🛠 Update existing details
+* 📋 Display in a table format
 
-* 👤 Login system
-* 💼 User salary and tax tracking
-* 📦 Add and list products
-* 🛒 Buy items from inventory
+**Facts:**
 
----
-
-## 📅 To-DoList Calendar
-
-**Plan your year with a 12-month interactive calendar.**
-
-### 🔍 Overview
-
-Monthly task management with ANSI color-coded UI.
-
-### 🛠 Features
-
-* 📅 Add tasks per month/day
-* 🎨 Color-coded display
-* 🔍 Search and edit tasks
+* Uses STL containers for scalability
+* Input validation to prevent errors
+* Ideal for learning CRUD operations in C++
 
 ---
 
-## 🪖 War Enrollment System
+## 3️⃣ `SavingMoney.cpp` - Personal Savings Planner 💰
 
-**A playful recruitment screening system.**
+### 📖 Overview
 
-### 🔍 Overview
+A savings tracking app to help users reach their financial goals.
 
-Manages enlistee eligibility checks with CRUD functions.
+**Features:**
 
-### 🛠 Features
+* 🎯 Goal-based savings tracking
+* 📊 Displays progress percentage
+* 📅 Adjustable targets and timeframes
 
-* 📏 Height eligibility validation
-* 🚻 Gender verification
-* 📋 Full CRUD on enlistee data
+**Facts:**
 
+* Great beginner’s project for financial management logic
+* Uses clear-screen commands for better UX
+* Handles integer and floating-point calculations
 
+---
 
+## 4️⃣ `savings_tracker.cpp` - Advanced Savings Tracker 📈
 
+### 📖 Overview
+
+An improved savings tracker with advanced reporting.
+
+**Features:**
+
+* 💵 Add and withdraw amounts
+* 📈 View savings growth over time
+* 📝 Transaction log system
+
+**Facts:**
+
+* Stores data in dynamic containers
+* Modular design for future expansion
+* Uses `iomanip` for neat output
+
+---
+
+## 5️⃣ `StockMate.cpp` - Stock Portfolio Tracker 📊
+
+### 📖 Overview
+
+Tracks stock holdings, calculates profits/losses, and displays financial insights.
+
+**Features:**
+
+* 📈 Track multiple stocks
+* 💹 Calculate percentage gains/losses
+* 📉 Historical trend analysis (manual entry)
+
+**Facts:**
+
+* Focus on investment portfolio simulation
+* CLI-based for minimal resource use
+* Extensible for live API integration
+
+---
+
+## 6️⃣ `todolist_calender.cpp` - To-Do List with Calendar 🗓
+
+### 📖 Overview
+
+A task management tool with a built-in calendar.
+
+**Features:**
+
+* ✅ Add, edit, and delete tasks
+* 📅 Assign tasks to specific dates
+* 🖥 Clean console layout with task highlighting
+
+**Facts:**
+
+* Combines scheduling and task tracking in one tool
+* Encourages productivity for console users
+* Structured with multiple functions for readability
+
+---
+
+## 7️⃣ `WarEnrollmentSystem.cpp` - Military Enrollment System 🎖
+
+### 📖 Overview
+
+A system for registering and managing military recruits.
+
+**Features:**
+
+* 🪖 Add and store recruit data
+* 📝 Update soldier profiles
+* 🔍 Search and display database
+
+**Facts:**
+
+* Demonstrates structured data management in C++
+* Includes strong input validation
+* Good example of a record-keeping system
