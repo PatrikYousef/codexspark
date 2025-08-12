@@ -118,6 +118,9 @@ ____
 * Perfekt för att lära sig **binära tal** & **valideringslogik**.
 
 ---
+<img width="416" height="146" alt="Skärmavbild 2025-08-12 kl  21 38 35" src="https://github.com/user-attachments/assets/3616dca9-5b3b-498a-8307-ac117f5942f5" />
+
+
 
 ## 📐 **Area- & Omkretsräknare** (`calculation_area_and_permiters.py`)
 
@@ -175,6 +178,9 @@ ____
 
 ---
 
+<img width="407" height="289" alt="Skärmavbild 2025-08-12 kl  21 40 40" src="https://github.com/user-attachments/assets/815828c7-8810-496f-8602-9263be01ac67" />
+
+
 ## 📚 **Bibliotekssystem** (`LibrarySystem.cpp`)
 
 ### 📋 Översikt
@@ -189,6 +195,8 @@ ____
 
 ---
 
+<img width="445" height="415" alt="Skärmavbild 2025-08-12 kl  21 39 47" src="https://github.com/user-attachments/assets/0b771c35-0e41-4303-a1e8-c3aaaa7b0d72" />
+
 ## 💸 **Lånehantering** (`LoanManagement.cpp`)
 
 ### 📋 Översikt
@@ -202,6 +210,8 @@ ____
 * Använder **finansiell matematik** i C++.
 
 ---
+
+<img width="527" height="280" alt="Skärmavbild 2025-08-12 kl  21 40 11" src="https://github.com/user-attachments/assets/da776e0a-b13c-4133-b885-032a6ef03bf3" />
 
 ## 🧮 **Matteverktyg** (`matte.cpp`)
 
@@ -241,6 +251,8 @@ Ett sparmålssystem för att hjälpa användare nå sina ekonomiska mål.
 
 ---
 
+<img width="327" height="292" alt="Skärmavbild 2025-08-12 kl  21 40 54" src="https://github.com/user-attachments/assets/422b1a5c-7114-4062-a2a7-41c7506bd5ad" />
+
 ## 📈 **Avancerad Sparspårare** (`savings_tracker.cpp`)
 
 ### 📋 Översikt
@@ -276,6 +288,8 @@ Ett uppgiftshanteringsverktyg med inbyggd kalender.
 * 🖥 Snygg och tydlig layout
 
 ---
+<img width="622" height="283" alt="Skärmavbild 2025-08-12 kl  21 42 16" src="https://github.com/user-attachments/assets/cbd33f1b-4ee0-4c21-9f31-9afd11bb60eb" />
+
 
 ## 🎖 **Militärregistreringssystem** (`WarEnrollmentSystem.cpp`)
 
@@ -286,3 +300,6 @@ System för att registrera och administrera militärrekryter.
 * 🪖 Lägger till och sparar rekryters data
 * 📝 Uppdaterar soldatprofiler
 * 🔍 Sök och visa register
+
+<img width="382" height="244" alt="Skärmavbild 2025-08-12 kl  21 42 32" src="https://github.com/user-attachments/assets/5f93a5ed-1e9e-4723-883a-68cab074ca3c" />
+
