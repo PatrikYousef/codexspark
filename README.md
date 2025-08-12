@@ -19,6 +19,8 @@
 * 📚 Praktiskt exempel på **menybaserade CLI-appar**.
 
 ---
+<img width="363" height="277" alt="Skärmavbild 2025-08-12 kl  15 22 06" src="https://github.com/user-attachments/assets/22d6dc1f-0ff3-4a7d-bc9e-d1faf70ceb8e" />
+
 
 # 🏥 Loan & Prescription Registry
 
