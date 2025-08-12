@@ -20,7 +20,7 @@
 
 ---
 <img width="363" height="277" alt="Skärmavbild 2025-08-12 kl  15 22 06" src="https://github.com/user-attachments/assets/22d6dc1f-0ff3-4a7d-bc9e-d1faf70ceb8e" />
-
+---
 
 # 🏥 Loan & Prescription Registry
 
@@ -47,6 +47,10 @@ Detta program låter dig:
 | 🗑 Ta bort patient | Tar bort patient efter ID |
 | 💊 Lägg till förskrivning | Lägger till läkemedel med kvantitet |
 | 🔍 Visa förskrivningar | Visar alla läkemedel för vald patient |
+
+---
+
+<img width="359" height="321" alt="Skärmavbild 2025-08-12 kl  15 25 12" src="https://github.com/user-attachments/assets/a5477887-0137-4c2d-aefe-2fe0ff0d1cf0" />
 
 ---
 
