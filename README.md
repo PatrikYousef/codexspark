@@ -101,7 +101,8 @@ Detta program låter dig:
 
 ### 🎓 Lärandemål
 * Inspirerar till dagliga studier med interaktiv inlärning.
-
+____
+<img width="467" height="593" alt="Skärmavbild 2025-08-12 kl  21 24 57" src="https://github.com/user-attachments/assets/024bf51c-4ab8-46ad-892b-efcf3b0739c2" />
 ---
 
 ## 🔢 **Binär → Decimal-omvandlare** (`binarynumberscounter.cpp`)
