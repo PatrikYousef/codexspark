@@ -50,8 +50,6 @@ Detta program låter dig:
 
 ---
 
-<img width="359" height="321" alt="Skärmavbild 2025-08-12 kl  15 25 12" src="https://github.com/user-attachments/assets/a5477887-0137-4c2d-aefe-2fe0ff0d1cf0" />
-
 ---
 
 # 🏥 Medicaid System (C++)
@@ -72,6 +70,9 @@ Detta program låter dig:
 - 🛡️ **Inmatningsvalidering** för siffror (kostnad/år & antal år)
 
 ---
+<img width="359" height="321" alt="Skärmavbild 2025-08-12 kl  15 25 12" src="https://github.com/user-attachments/assets/a5477887-0137-4c2d-aefe-2fe0ff0d1cf0" />
+---
+
 
 ## 🎓 **Betygssystem** (`betygsystem.cpp`)
 
