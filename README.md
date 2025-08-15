@@ -184,7 +184,8 @@ ____
 
 ---
 
-<img width="407" height="289" alt="Skärmavbild 2025-08-12 kl  21 40 40" src="https://github.com/user-attachments/assets/815828c7-8810-496f-8602-9263be01ac67" />
+<img width="571" height="298" alt="Skärmavbild 2025-08-15 kl  13 39 37" src="https://github.com/user-attachments/assets/881c8b8b-e7dc-40b2-bffb-679f6b6b3d5a" />
+
 
 
 ## 📚 **Bibliotekssystem** (`LibrarySystem.cpp`)
