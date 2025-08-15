@@ -134,6 +134,9 @@ ____
 
 ---
 
+<img width="328" height="241" alt="Skärmavbild 2025-08-15 kl  13 40 53" src="https://github.com/user-attachments/assets/5364f538-42cd-4226-ad77-b58c212fe77f" />
+
+
 ## 📈 **GitHub Statistikspårare** (`GitHub.StatsTracker.cpp`)
 
 ### 📋 Översikt
@@ -148,6 +151,9 @@ ____
 * Lär ut **aggregeringslogik** & **formaterad utskrift**.
 
 ---
+
+<img width="544" height="241" alt="Skärmavbild 2025-08-15 kl  13 41 34" src="https://github.com/user-attachments/assets/470c9ba7-7a1c-4e5a-b3b4-0dab1b930cea" />
+
 
 ## 🎓 **GPA-räknare** (`gpa.cpp`)
 
