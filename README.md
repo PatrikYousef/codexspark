@@ -226,6 +226,9 @@ En funktionsrik matematikapplikation för terminalen som kan göra flera typer a
 
 ---
 
+<img width="267" height="368" alt="Skärmavbild 2025-08-15 kl  13 33 42" src="https://github.com/user-attachments/assets/9f6c390e-a67b-4e5e-b39c-5c7575acd5ed" />
+
+
 ## 🧍‍♂️ **Personhanteringssystem** (`person_manager.cpp`)
 
 ### 📋 Översikt
@@ -238,6 +241,9 @@ Ett konsolbaserat register för att lagra, söka och uppdatera personuppgifter.
 * 📋 Tabellformaterad utskrift
 
 ---
+
+<img width="375" height="274" alt="Skärmavbild 2025-08-15 kl  13 32 09" src="https://github.com/user-attachments/assets/f5e9d688-02dd-4ad9-84d5-e1ad1644769a" />
+
 
 ## 💰 **Sparplanerare** (`SavingMoney.cpp`)
 
