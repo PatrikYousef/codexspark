@@ -270,6 +270,8 @@ En förbättrad sparspårare med rapportfunktioner.
 * 📝 Transaktionslogg
 
 ---
+<img width="332" height="289" alt="Skärmavbild 2025-08-15 kl  13 35 27" src="https://github.com/user-attachments/assets/30df195a-38d3-4658-8720-483c9cb655ad" />
+
 
 ## 📊 **Aktieportföljspårare** (`StockMate.cpp`)
 
@@ -282,6 +284,8 @@ Håller koll på aktieinnehav, räknar vinster/förluster och ger ekonomiska ins
 * 📉 Enkel trendanalys (manuell inmatning)
 
 ---
+
+<img width="324" height="272" alt="Skärmavbild 2025-08-15 kl  13 37 41" src="https://github.com/user-attachments/assets/d484a41b-3da7-4d20-849c-cc2e525507d8" />
 
 ## 🗓 **Att göra-lista med kalender** (`todolist_calender.cpp`)
 
