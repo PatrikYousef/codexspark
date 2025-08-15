@@ -50,6 +50,8 @@ Detta program låter dig:
 
 ---
 
+<img width="434" height="259" alt="Skärmavbild 2025-08-15 kl  13 51 22" src="https://github.com/user-attachments/assets/a6669929-7d94-4222-b18a-d3dbb3c7de23" />
+
 ---
 
 # 🏥 Medicaid System (C++)
