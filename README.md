@@ -1,3 +1,73 @@
+# 👨‍💻 Patrik Yousef  
+
+📞 **076-939 71 12**  
+📧 **[yousefpatrik@gmail.com](mailto:yousefpatrik@gmail.com)**  
+
+---
+
+## 🌟 Personlig Profil  
+Jag är en tekniskt kunnig 18-åring med stark passion för programmering och webbutveckling.  
+Med praktisk erfarenhet av **HTML, CSS, JavaScript, Python och C++** har jag utvecklat responsiva webbapplikationer och automatiserade lösningar.  
+Jag arbetar strukturerat och självständigt men trivs även i team där jag gärna delar kunskap och hittar lösningar.  
+Jag är nyfiken och har ett öga för förbättringar – alltid redo att växa som utvecklare och bidra till er verksamhet.  
+
+---
+
+## 💼 Arbetslivserfarenhet  
+
+**Praktikant – Elgiganten, Bromma Blocks** *(nov 2024 – jan 2025)*  
+
+- Kundvärd: Identifierade kundbehov och gav personliga rekommendationer för bästa upplevelse.  
+- Butiken: Hanterade lageruppgifter, inklusive inlarmning av varor och uppdatering av priser.  
+- Lager och Butik: Utvecklade mina kommunikations- och problemlösningsfärdigheter i en dynamisk miljö.  
+- Exempel på en kundinteraktion: Hjälpte en kund att hitta en dator och datormus som passade hans behov. Genom att ge fakta och ställa rätt frågor kunde jag ge relevanta rekommendationer. Kunden blev mycket nöjd och erbjöd sig att vara min referens.  
+
+---
+
+## 🎓 Utbildning  
+
+**Thorildsplans gymnasium, Stockholm** *(aug 2022 – juni 2025)*  
+
+- **Linje:** El- och energiprogrammet, inriktning: Dator- och kommunikationsteknik.  
+
+🏅 **Stipendier:**  
+- **Uppmuntransstipendium – 2024:** Erkänd av skolan för tydlig förbättring i gott uppförande och ansvarstagande. Syftet var att uppmuntra fortsatt positiv utveckling.  
+- **Stipendium – 2022:** Tilldelades av Eriksdalsskolan för målmedvetet arbete, uthållighet vid utmaningar samt en positiv och stödjande roll bland eleverna.  
+
+---
+
+## 🛠️ Färdigheter  
+
+| Färdighet | Nivå | Beskrivning |
+|-----------|------|-------------|
+| HTML      | Avancerad | Skapat responsiva och strukturerade webbapplikationer |
+| CSS       | Medelnivå | Kunskap inom moderna CSS-tekniker för design och layout |
+| JavaScript| Grundläggande | Byggt enklare funktioner och dynamik på webbsidor |
+| C++       | Mellannivå | Algoritmer, objektorientering, minneshantering och datastrukturer |
+| Python    | Medelnivå – Avancerad | Automatisering och databehandling |
+
+*(Erfarenhetsperiod: aug 2024 – feb 2025)*  
+
+---
+
+## 🎯 Intressen  
+- Bygger egna projekt för att utveckla mina programmeringsfärdigheter inom webbutveckling och programmering.  
+
+*(Intresseperiod: aug 2024 – feb 2025)*  
+
+---
+
+## 🌐 Språkkunskaper  
+- **Svenska:** Flytande  
+- **Kaldeiska (Assyriska):** Kan prata språket  
+- **Engelska:** Goda kunskaper  
+
+---
+
+## 📜 Referenser  
+Lämnas på begäran  
+
+
 # 🌟 **Ultimat Multi-Projekt README-samling**
 
 ## 🏦 **C++ Konsolbankssystem** (`bankaccount.cpp`)
