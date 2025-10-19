@@ -8,7 +8,6 @@
 ### 🔍 Nyckelfakta
 * 📑 **Tvåstegsmenyer**: Användarmeny & Bankmeny.
 * 🔢 Auto-genererade **kontonummer**, **CVV-koder** och **PIN-koder**.
-* 🎂 **Ålderskontroll** (18+) vid kontoöppning.
 * 💰 Realtidsuppdatering av saldo vid insättning/uttag.
 * 📊 Tabellutskrift med exakt formatering.
 * 💻 **Plattformsoberoende** skärmrensningsfunktion.
@@ -19,8 +18,10 @@
 * 📚 Praktiskt exempel på **menybaserade CLI-appar**.
 
 ---
-<img width="363" height="277" alt="Skärmavbild 2025-08-12 kl  15 22 06" src="https://github.com/user-attachments/assets/22d6dc1f-0ff3-4a7d-bc9e-d1faf70ceb8e" />
+<img width="365" height="302" alt="Skärmavbild 2025-10-20 kl  00 08 55" src="https://github.com/user-attachments/assets/6dee10fb-0fef-4d82-82a6-bdb82a693bb1" />
+
 ---
+
 
 # 🏥 Loan & Prescription Registry
 
